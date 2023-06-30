@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul{
+                border: 1px solid blue;
+                width: 400px;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+                
+            }
+            li{
+                border: 1px solid palevioletred;
+                width: 380px;
+                margin: 4px ;
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value :
+                <input type="text" id="fVal">
+            </li>
+            <li>
+                Enter second value :
+                <input type="text" id="sVal">
+            </li>
+            <li>
+                select option :
+                <select  id="userOption">
+                    <option>Add</option>
+                    <option>Sub</option>
+                    <option>Mul</option>
+                    <option>Div</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Result" onclick="doJob()">
+            </li>
+            <li>
+                Result is : <span id="rBlock"></span>
+            </li>
+        </ul>
+        <script>
+            var doJob = ()=>{
+                var a1 = document.querySelector('#fVal').value;
+                var a1 = parseInt(a1);
+                var a2 = document.querySelector('#sVal').value;
+                var a2 = parseInt(a2);
+
+                var option= document.querySelector('#userOption').value;
+                var result = 0;
+                if(option == 'Add'){
+                    result= a1+a2;
+                }else if (option == 'Sub'){
+                    result= a1-a2;
+                }else if (option =='Mul'){
+                    result = a1*a2;
+                }else{
+                    result = a1/a2;
+                }
+                document.querySelector('#rBlock').innerHTML= result
+            }
+        </script>
+    </body>
+</html>

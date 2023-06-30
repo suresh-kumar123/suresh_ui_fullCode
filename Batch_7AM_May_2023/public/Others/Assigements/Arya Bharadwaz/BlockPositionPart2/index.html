@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(0, 0, 0, 0.35);
+        }
+        .wrapper{
+            position: relative;
+            height: 600px;
+            width: 800px;
+            border: 1px solid;
+            padding: 5px;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .header{
+            border: 2px solid red;
+            padding: 0.8rem;
+            font-size: 18px;
+            text-align: center;
+        }
+        .block1,.block2, .block4,.block5,.block6,
+        .block7,.block8,.block9,.block10,.block11{
+            width: 120px;
+            height: 120px;
+            border: 2px solid rgba(0, 0, 0, 0.35);
+            margin: 4px;
+            position: absolute;
+        }
+        .block12,.block13,.block14, .block15{
+            width: 90px;
+            height: 90px;
+            border: 2px solid rgba(0, 0, 0, 0.35);
+            margin: 4px;
+            position: absolute;
+        }
+        .block1{
+            inset:0;
+            margin: 270px auto;
+            background-color:hsla(67, 100%, 50%, 1) ;
+            z-index: 1;
+        }
+        .block2{
+            background-color: red;
+        }
+        .block3{
+            height: 50px;
+            width: 10px;
+            background-color: rgb(218, 213, 213);
+            position: absolute;
+            z-index: 3;
+            border-radius: 10px;
+            left:85px;
+            top: 140px;
+        }
+        .block4{
+            top: 125px;
+            left: 70px;
+            background-color: hsl(14, 77%, 15%);
+        }
+        .block6{
+            top: 78%;
+            left: 4px;
+            background-color: hsla(220, 100%, 50%, 1);
+        }
+        .block7{
+            bottom:70px ;
+            left: 70px;
+            background-color: hsla(301, 100%, 50%, 1);
+        }
+        .block8{
+            top: 60px;
+            right: 6px;
+            background-color: hsla(345, 100%, 50%, 1);
+        }
+        .block9{
+            top: 125px;
+            right: 70px;
+            background-color: hsla(232, 100%, 50%, 1);
+        }
+        .block10{
+            top: 78%;
+            right:6px;
+            background-color: hsla(456, 100%, 50%, 1);
+        }
+        .block11{
+            bottom:70px;
+            right: 70px;
+            background-color: hsla(876, 100%, 50%, 1);
+        }
+        .block12{
+            bottom:170px;
+            right: 280px;
+            background-color: hsla(876, 100%, 50%, 1);
+        }
+        .block13{
+            bottom:170px;
+            left: 280px ;
+            background-color: rgb(241, 4, 190);
+        }
+        .block14{
+            top: 220px;
+            right: 280px;
+            background-color: rgb(212, 0, 255);
+        }
+        .block15{
+            top: 220px;
+            left: 280px ;
+            background-color: hsla(78, 89%, 34%, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Block Game</div>
+        <div class="block1">1</div>
+        <div class="block2">2</div>
+        <div class="block4">4</div>
+        <div class="block3"></div>
+        <div class="block6">6</div>
+        <div class="block7">7</div>
+        <div class="block8">8</div>
+        <div class="block9">9</div>
+        <div class="block10">10</div>
+        <div class="block11">11</div>
+        <div class="block12">12</div>
+        <div class="block13">13</div>
+        <div class="block14">14</div>
+        <div class="block15">15</div>
+    </div>
+</body>
+</html>

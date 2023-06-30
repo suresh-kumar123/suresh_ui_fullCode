@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS Positions - Absolute
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: green;
+            }
+            .block2 {
+                background-color: blue;
+                position: relative;
+            }
+            .block3 {
+                background-color: plum;
+                left: 120px;
+                top: 100px;
+                position: absolute;
+            }
+            .block4 {
+                
+                background-color: yellowgreen;
+            }
+            .parentGuy {
+                border: 1px solid red;
+                padding: 20px;
+                
+            }
+            .grandParent {
+                border: 1px solid yellowgreen;
+                padding: 40px;
+                position: relative;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="block block1">Block1</div>
+        <div class="block block2">Block2</div>
+        <div class="grandParent">
+            <div class="parentGuy">
+                <div class="block block3">Block3</div>
+            </div>
+        </div>
+        <div class="block block4">Block4</div>
+    </body>
+</html>

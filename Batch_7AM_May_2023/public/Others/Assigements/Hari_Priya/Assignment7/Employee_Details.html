@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <script>
+            var EmpName= prompt("enter the Emp_Name");
+            var EmpAge=prompt("Enter the Emp_Age");
+            var EmpGender=prompt("Enter the Emp_Gender");
+            var EmpLocation=prompt("Enter the Emp_Location");
+            var EmpDepartment=prompt("Enter the Emp_Department");
+            var EmpBasicSal=prompt("Enter the Emp_BasicSal");
+            EmpBasicSal=parseInt(EmpBasicSal);
+
+            var pf=(EmpBasicSal*12) / 100;
+            var hra=(EmpBasicSal*24) / 100;
+<<<<<<< Updated upstream
+            var TotalSal=pf+hra+EmpBasicSal;
+            var Tax=(TotalSal*15)/100;
+            var Tax1=(TotalSal*10)/100;
+            var Tax2=(TotalSal*5)/100;
+            var Tax3=(TotalSal*10)/100;
+            var Tax4=(TotalSal*5)/100;
+=======
+            var ToatalSal=pf+hra+EmpBasicSal;
+>>>>>>> Stashed changes
+
+            console.log("Emp_Name :"+ EmpName);
+            console.log("Emp_Age :" + EmpAge);
+            console.log("Emp_Gender :" + EmpGender);
+            console.log("Emp_Location :" + EmpLocation);
+            console.log("Emp_Department :" + EmpDepartment);
+            console.log("Emp_BasicSal :" + EmpBasicSal);
+<<<<<<< Updated upstream
+            console.log("The total Sal is"+TotalSal)
+
+            if(EmpGender=="Male") {
+                if(TotalSal>=500000) {
+                    console.log("Tax is :"+Tax);
+                }
+                else if(TotalSal>=300000) {
+                    console.log("Tax is :"+Tax1);
+                }
+                else if(TotalSal>=100000) {
+                    console.log("Tax is :"+Tax2);
+=======
+            console.log("The total Sal is"+ToatalSal)
+
+            if(EmpGender=="Male") {
+                if(ToatalSal>=500000) {
+                    console.log("Male Tax percent age should be of 15%");
+                }
+                else if(ToatalSal>=300000) {
+                    console.log("Male Tax percent age should be of 10% ");
+                }
+                else if(ToatalSal>=100000) {
+                    console.log("Male Tax percent age should be of 5% ");
+>>>>>>> Stashed changes
+                }
+                else{
+                    console.log("No Tax")
+                }
+<<<<<<< Updated upstream
+            } else if(EmpGender=="Female") {
+                if (TotalSal >=500000) {
+                    console.log("Tax is :"+Tax3);   
+                }
+                else if (TotalSal >= 300000){
+                    console.log("Tax is :"+Tax4);
+                }
+                else{
+                    console.log("No Tax");
+=======
+            } else if(EmpGender="Female") {
+                if (Totalsal >=500000) {
+                    console.log("Female Tax percent age should be of 10% ");   
+                }
+                else if (Totalsal >= 300000){
+                    console.log("Female Tax percent age should be of 5%");
+                }
+                else{
+                    console.log("Female Tax pecentage age should be of 0%");
+>>>>>>> Stashed changes
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number Length</title>
+    </head>
+    <body>
+        <script>
+            var x = prompt("Enter the number:");
+            x = parseInt(x);
+            var counter = 0;
+
+            while(x > 0){
+                x = x / 10;
+                x = parseInt(x);
+                counter++;              
+            }console.log(counter);             
+        </script>
+    </body>
+</html>

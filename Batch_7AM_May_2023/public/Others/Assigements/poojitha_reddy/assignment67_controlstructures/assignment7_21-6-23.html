@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Working with employee details
+        </title>
+    </head>
+    <body>
+        <script>
+                   
+            var employeeName = prompt("Enter the employeeName:");
+            var age = prompt("Enter the age:");
+            var gender = prompt("Enter the gender:");
+            var male = "male";
+            var female = "female";
+            var empLocation = prompt("Enter the location:");
+            var department = prompt("Enter the department:");
+            var basicsal = prompt("Enter the Basic Salary:");
+            parseInt(basicsal);
+            var pf = (basicsal*12)/100;
+            var hra = (basicsal*24)/100;
+            var totalsal = pf+ hra + basicsal;
+
+             var tax1 = totalsal*0.15 ;
+             var tax2 = totalsal*0.1 ;
+             var tax3 = totalsal*0.05 ;
+              
+
+
+            console.log("Employee Name: " +employeeName);
+            console.log("Age: " + age);
+            console.log("Gender: " + gender);
+            console.log("Location: " + empLocation);
+            console.log("Department: " +  department);
+            console.log("The basic salary is " +  basicsal);
+            console.log("the pf is" + pf);
+            console.log("the hra is" + hra);
+            console.log("the totalsal is" + totalsal);
+
+            if(gender = male)  {
+                if(totalsal >= 500000) {
+                     
+                    console.log(" Tax percentage is 15% " + "=" + tax1);
+                }
+                else if(totalsal >= 300000) {
+                    
+                    console.log(" Tax percentage is 10% " + "=" + tax2);
+                }
+                else if(totalsal >= 100000){
+                     
+                    console.log(" Tax percentage is 5% " + "=" + tax3);
+                }
+                else{
+                     
+                    console.log(" Tax percentage is zero");
+                }
+            }
+            else if(gender = female) {
+
+                if(totalsal >= 500000){
+                     
+                    console.log(" Tax percentage is 10% "  + "=" + tax2);
+                }
+                else if(totalsal >= 300000){
+                    
+                    console.log(" Tax percentage is 5% " + "=" + tax3);
+                }
+                else{
+                     
+                    console.log("Tax percentange is zero");
+                }
+            }
+        </script>
+    </body>
+</html>

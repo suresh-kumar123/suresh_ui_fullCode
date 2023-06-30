@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MockUp Practice</title>
+
+        <style>
+            h3, h4{
+                border: 2px solid;
+                padding: 5px;
+                margin:5px;
+                text-align: center;
+            }
+
+            .mainContainer{
+                border: 2px solid;
+                height: 500px;
+                clear: both;
+            }
+
+            .lblock, .rblock{
+                border: 1px solid rgb(1, 65, 65) ;
+                height: 450px;
+                float: left;
+                padding: 5px;
+                margin: 5px;
+                overflow: auto;
+            }
+
+            .lblock{
+                width: 30%;
+            }
+
+            .rblock{
+                width: 65%;
+            }
+
+            .lblock li{
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style-position: inside;
+            }
+
+            .lblock li:hover{
+                background-color: rgb(250, 162, 0);
+                cursor: pointer;
+            }
+
+            .studentDetailsBlock > li{
+                height: 200px;
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+                list-style: none;
+
+            }
+
+            ul,ol{
+                margin: 1px;
+                padding: 1px;
+            }
+
+            .imageContainer{
+                padding: 10px;
+                width: 200px;
+                float: left;
+            }
+
+            .detailsContainer{
+                float: left;
+
+            }
+
+            img{
+                width: 150px;
+                height: 150px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h3>STUDENT DETAILS</h3>
+
+        <!-- Left container -->
+
+        <div class="mainContainer">
+            <div class="lblock">
+                <ol>
+                    <li> <a href="#stu1">Harry </a></li>
+                    <li> <a href="#stu2">Hermoine</a></li>
+                    <li> <a href="#stu3">Ron</a></li>
+                    <li> <a href="#stu4">Luna </a></li>
+                    <li> <a href="#stu5">Ginny</a></li>
+                    <li> <a href="#stu6">Draco</a></li>
+                    <li> <a href="#stu7">Neville</a></li>
+                    <li> <a href="#stu8">George</a></li>
+                    <li> <a href="#stu9">Weasley</a></li>
+                </ol>
+            </div>
+
+            <div class="rblock">
+                <ul class="studentDetailsBlock">
+
+                    <li id="stu1">
+                    <div class="imageContainer">
+                        <img src="./Images/Images.png" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Harry</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 1st</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu2">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Hermoine</li>
+                            <li>Age:25</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 2nd</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu3">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Ron</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 3rd</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu4">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Luna</li>
+                            <li>Age:25</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 4th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu5">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Ginny</li>
+                            <li>Age:25</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 5th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu6">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Draco</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 6th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu7">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Neville</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 7th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu8">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:George</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 8th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="stu9">
+                    <div class="imageContainer">
+                        <img src="/Images/1.JPG" alt="" srcset="">
+                        </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name:Weasley</li>
+                            <li>Age:25</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hogwarts</li>
+                            <li>Rank: 9th</li>
+                        </ul>
+                    </div>
+                </li>
+
+                
+                </ul>
+
+            </div>
+        
+        </div>
+
+        <!-- Footer -->
+
+        <h4> <u>@copyrights 2024</u></h4>
+    </body>
+</html>

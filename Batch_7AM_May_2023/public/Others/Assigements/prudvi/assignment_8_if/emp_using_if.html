@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emp details using if</title>
+</head>
+<body>
+    <h1>emp details using if</h1>
+    <script>
+        var ename=prompt("enter your name");
+        var age=prompt("enter your age");
+        var gender=prompt("enter your gender");
+        var locc=prompt("enter your location");
+        var dept=prompt("enter department");
+        var bsal=prompt("enter basic salary");
+        bsal=parseInt(bsal);
+        var pf=(12*bsal)/100;
+        var hrf=(24*bsal)/100;
+
+        var total=bsal+pf+hrf;
+        var tax;
+        console.log("the total salary is "+total);
+
+       if(gender=="male"){
+
+        if(total>=500000){
+            tax=(15*total)/100 ;
+            console.log("the tax of "+ename+" is "+tax);
+            console.log("you are 1 tax payer");
+            
+        }
+        else if(total>=300000){
+            tax=(10*total)/100 ;
+            console.log("the tax of "+ename+" is "+tax);
+            console.log("you are 2 tax payer");
+
+        }
+        else if(total>=100000){
+            tax=(5*total)/100;
+            console.log("the tax of "+ename+" is "+tax);
+            console.log("you are 3 tax payer");
+        }
+        else{
+           tax=0;
+           console.log("your tax is " +tax);
+            console.log("you dont need to pay tax");
+        }
+       
+       }
+
+       else if(gender=="female"){
+
+        if(total>500000){
+            tax=(10*total)/100;
+            console.log("the tax of "+ename+" is"+tax);
+            console.log("you are no.1 tax payer")
+        }
+        else if(total>300000){
+            tax=(5*total)/100;
+            console.log("the tax of "+ename+" is"+tax);
+            console.log("you are no.2 tax payer")
+        }
+        else{
+            console.log("you dont need to pay tax");
+        }
+       
+       }
+       else{
+        console.log("you are not earning any salary to pay tax");
+       }
+       
+       
+
+    </script>
+</body>
+</html>

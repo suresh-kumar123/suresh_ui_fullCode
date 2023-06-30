@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background: #333;
+            height: 150px;
+            width: 400px;
+            margin: 20px 10px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            font-family: tahoma;
+        }
+        input{
+            padding: 5px;
+            outline: none;
+        }
+        #result{
+            color: white;
+            margin: 20px;
+            font-family: tahoma;
+            font-size: 20px;
+            display: none;
+        }
+        input[type=number]{
+            -moz-appearance: textfield;
+        }
+        button{
+            padding: 5px;
+            transition: 100ms all ease-in-out;
+        }
+        button:hover{
+            transform: translateY(-2px);
+        }
+        button:active{
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Prime Calculator</h2>
+            <p>Enter a number:</p>
+            <input type="number" id="input">
+            <div id="result"></div>
+            <button class="btn">Click</button>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector('.container');
+        const result = document.getElementById('result');
+        const btn = document.querySelector('.btn');
+        //     const prime = () => {
+        //     let count=0
+        //     let i,j 
+        //     for(j=2;j<=100;j++){
+        //     for( i=1;i<=j;i++){
+        //         if(j%i==0)
+        //         count++
+        //         }
+        //     if(count==2)
+        //     console.log(j)
+        //     count=0
+        //     }
+        // }
+        // // prime()
+        
+        btn.addEventListener('click', prime_two);
+
+        function prime_two(){
+            const text = document.getElementById('input').value;
+            let count=0
+            for(let j=1;j<=text;j++){
+                if(text % j==0){
+                    count++
+                    }
+                }
+                if(count == 2){
+                    result.innerHTML=`${text} is a prime number`;
+                    container.style.height="250px"
+                    result.style.display = "block"
+                } else{
+                    result.innerHTML=`${text} is not a prime number`
+                    container.style.height="250px"
+                    result.style.display = "block"
+
+                }
+            }
+        
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Salary of Employee including Tax</title>
+</head>
+<body>
+    <script>
+        var empName = prompt("Enter Employee Name");
+        var age = prompt("Enter Employee  Age");
+        var gender = prompt("Enter Employee Gender");
+        var empLocation = prompt ("Enter Employee Location");
+        var department = prompt ("Enter Employee Working Department");
+        var basicsal = prompt("Enter Employee Basic Salary per annum");
+        basicsal = parseInt(basicsal);
+        var pf = (basicsal * 12) / 100;
+        var hrf = (basicsal * 24) / 100;
+        var totalsal = pf + hrf + basicsal;
+        console.log("Employee Name is "+ empName);
+        console.log("Employee Age is "+ age);
+        console.log("Employee Gender is "+ gender);
+        console.log("Employee Working Location is "+ empLocation);
+        console.log("Employee Working Department is "+ department);
+        console.log("Employee Basic Salary oer annum is "+ basicsal);
+        console.log("Employee PF is "+ pf);
+        console.log("Employee HRF is "+ hrf);
+        console.log("Employee Total Salary per annum is "+ totalsal);
+        var finalsal;
+        if ( gender == "male" ) {
+            if ( totalsal >= 500000 ) {
+                console.log("Tax Percentage is 15%.");
+                finalsal = totalsal - (0.15 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            } else if ( totalsal >= 300000 ) {
+                console.log("Tax Percentage is 10%.");
+                finalsal = totalsal - (0.1 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            } else if ( totalsal >= 100000 ) {
+                console.log("Tax Percentage is 5%.");
+                finalsal = totalsal - (0.05 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            } else {
+                console.log("Tax Percentage is 0%.");
+                finalsal = totalsal - (0 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            }
+        } else if ( gender == "female" ) {
+            if ( totalsal >= 500000 ) {
+                console.log("Tax Percentage is 10%.");
+                finalsal = totalsal - (0.1 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            } else if ( totalsal >= 300000 ) {
+                console.log("Tax Percentage is 5%.");
+                finalsal = totalsal - (0.5 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            } else {
+                console.log("Tax Percentage is 0%.");
+                finalsal = totalsal - (0 * totalsal);
+                console.log("Final Salary per annum after Tax Reduction is "+ finalsal);
+            }
+        }
+    </script>
+</body>
+</html>

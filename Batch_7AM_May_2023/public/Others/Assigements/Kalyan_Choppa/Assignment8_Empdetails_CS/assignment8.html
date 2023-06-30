@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Control Structures</title>
+    </head>
+    <body>
+        <h3>EMPloyee Details</h3>
+        <script>
+            var empname= prompt('Enter Employee Name');
+            var empgender= prompt('Enter Employee Gender');
+            var empdept= prompt('Enter Employee Department');
+            var empsal= parseInt(prompt('Enter Employee Salary'));
+            var pf=(empsal*12)/100;
+            var hra=(empsal*24)/100;
+            var totalsal= empsal+pf+hra;
+
+            console.log('Employee Name: '+ empname)
+            console.log('Gender: '+ empgender)
+            console.log('Dept: '+ empdept)
+            console.log('Total Salary: '+ totalsal)
+
+            if (empgender=='male'){
+                if (totalsal>=500000){
+                    tax= totalsal*0.15
+                    console.log('Tax in %: '+ tax)
+                }
+                else if (totalsal>=300000){
+                    tax= totalsal*0.10
+                    console.log('Tax in %: '+ tax)
+                }
+                else if (totalsal>=100000){
+                    tax= totalsal*0.5
+                    console.log('Tax in %: '+ tax)
+                }
+                else{
+                    console.log('No tax')
+                }
+            }
+            else{
+                if (totalsal>=500000){
+                    tax= totalsal*0.10
+                    console.log('Tax in %: '+ tax)
+                }
+                else if (totalsal>=300000){
+                    tax= totalsal*0.5
+                    console.log('Tax in %: '+ tax)
+                }
+                else{
+                    console.log('No tax')
+                }
+            };           
+        </script>
+    </body>
+</html>

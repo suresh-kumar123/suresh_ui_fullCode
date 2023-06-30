@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating alternative for switch case CS</title>
+    </head>
+    <body>
+        <script>
+            /* var m1 = prompt("Enter first value");
+            var m2 = prompt("Enter Second value");
+
+            m1 = parseInt(m1);
+            m2 = parseInt(m2);
+
+            var selectedOption = prompt("select an option 1. Add 2. Mul 3. Div 4. sub");
+
+
+            if (selectedOption == 'add') {
+                var sum = m1 + m2 ;
+                console.log("The sum is " + sum);
+            } else if (selectedOption == 'sub') {
+
+                var sub = m1 - m2;
+                console.log("The sub is " + sub);
+            } else if (selectedOption == 'mul') {
+
+                var mul = m1 * m2;
+                console.log("The multiplication is " + mul);
+            } else if (selectedOption == 'div') {
+
+                var division = m1 / m2;
+                console.log("The divisition is "  + division);
+            } else {
+                console.log("Selected wrong option");
+            } */
+
+
+            var m1 = prompt("Enter first value");
+            var m2 = prompt("Enter Second value");
+
+            m1 = parseInt(m1);
+            m2 = parseInt(m2);
+
+            var selectedOption = prompt("select an option 1. Add 2. Mul 3. Div 4. sub");
+
+            switch(selectedOption) {
+                case 'add':
+                    var sum = m1 + m2 ;
+                    console.log("The sum is " + sum);
+                    break;
+                case 'div':
+                    var division = m1 / m2; 
+                    console.log("The divisition is "  + division);
+                    break;
+                case 'sub':
+                    var sub = m1 - m2;
+                    console.log("The sub is " + sub);
+                    break;
+                case 'mul':
+                    var mul = m1 * m2;
+                    console.log("The multiplication is " + mul);
+                    break;
+                default:
+                    console.log("Wrong selection");
+            }
+
+
+            
+        </script>
+    </body>
+</html>

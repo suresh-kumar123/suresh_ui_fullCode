@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details</title>
+        <style>
+            #heading{
+                border: 3px solid black;
+                text-align: center;
+                text-decoration: underline;
+                margin: 7px;
+                padding: 7px;
+            }
+            #names, #student_details{
+                height: 400px;
+                margin: 10px;
+                padding: 10px;
+                overflow: auto;
+                border: 2px solid red;
+            }
+            #names{
+                width: 300px;
+                float: left;
+            }
+            #student_details{
+                float: right;
+                width: 850px;
+                
+            }
+            #stu1, #stu2, #stu3, #stu4, #stu5, #stu6, #stu7, #stu8, #stu9, #stu10{
+                border: 2px solid green;
+                margin-bottom: 5px;
+                padding: 5px;
+                width: 810px;
+                float: left;
+                clear: both;
+            }
+            .stu_photo{
+                height: 100px;
+                width: 120px;
+                margin: 5px;
+                border: 2px dotted rgb(70, 25, 202);
+                background-image: url(images/All_Student_Images.png);
+                float: left;
+                clear: both;
+            }
+            .stu_info{
+                padding: 5px;
+                float: left;
+            }
+            .pho1{
+                background-position: -16px -30px;
+            }
+            .pho2{
+                background-position: -347px -38px;
+            }
+            .pho3{
+                background-position: -176px -6px;
+            }
+            .pho4{
+                background-position: -26px -443px;
+            }
+            .pho5{
+                background-position: -42px -238px;
+            }
+            .pho6{
+                background-position: -198px -230px;
+            }
+            .pho7{
+                background-position: -224px -441px;
+            }
+            .pho8{
+                background-position: -359px -245px;
+            }
+            .pho9{
+                background-position: -39px -684px;
+            }
+            .pho10{
+                background-position: -418px -420px;
+            }
+            .nameList:hover{
+                font-size: x-large;
+                color: red;
+                cursor: pointer;
+            }
+            #copywrite{
+                clear: both;
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid red;
+                font-size: 9px;
+                text-align: center;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Student Details</h1>
+        <div>
+            <div id="names">
+                <span class="nameList">1.Raj</span><br>
+                <br>
+                <span class="nameList">2.Krish</span><br>
+                <br>
+                <span class="nameList">3.Ganga</span><br>
+                <br>
+                <span class="nameList">4.Teena</span><br>
+                <br>
+                <span class="nameList">5.Raju</span><br>
+                <br>
+                <span class="nameList">6.Hari</span><br>
+                <br>
+                <span class="nameList">7.Swapna</span><br>
+                <br>
+                <span class="nameList">8.Vamsi</span><br>
+                <br>
+                <span class="nameList">9.Srinu</span><br>
+                <br>
+                <span class="nameList">10.Pallavi</span><br>
+            </div>
+            <div id="student_details">
+                <div id="stu1">
+                    <div>
+                        <div class="stu_photo pho1"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Raj</span></div>
+                        <div><span>Age: 20</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Hyderabad</span></div>
+                        <div><span>Rank: 4</span></div>
+                    </div>
+                </div>
+                <div id="stu2">
+                    <div>
+                        <div class="stu_photo pho2"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Krish</span></div>
+                        <div><span>Age: 18</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Pune</span></div>
+                        <div><span>Rank: 3</span></div>
+                    </div>
+                </div>
+                <div id="stu3">
+                    <div>
+                        <div class="stu_photo pho3"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Ganga</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Female</span></div>
+                        <div><span>Location: Bengaluru</span></div>
+                        <div><span>Rank: 5</span></div>
+                    </div>
+                </div>
+                <div id="stu4">
+                    <div>
+                        <div class="stu_photo pho4"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Teena</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Female</span></div>
+                        <div><span>Location: Bengaluru</span></div>
+                        <div><span>Rank: 1</span></div>
+                    </div>
+                </div>
+                <div id="stu5">
+                    <div>
+                        <div class="stu_photo pho5"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Raju</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Bengaluru</span></div>
+                        <div><span>Rank: 6</span></div>
+                    </div>
+                </div>
+                <div id="stu6">
+                    <div>
+                        <div class="stu_photo pho6"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Hari</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Visakapatnam</span></div>
+                        <div><span>Rank: 2</span></div>
+                    </div>
+                </div>
+                <div id="stu7">
+                    <div>
+                        <div class="stu_photo pho7"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Swapna</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Female</span></div>
+                        <div><span>Location: Delhi</span></div>
+                        <div><span>Rank: 8</span></div>
+                    </div>
+                </div>
+                <div id="stu8">
+                    <div>
+                        <div class="stu_photo pho8"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Vamsi</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Itanagar</span></div>
+                        <div><span>Rank: 10</span></div>
+                    </div>
+                </div>
+                <div id="stu9">
+                    <div>
+                        <div class="stu_photo pho9"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Srinu</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Male</span></div>
+                        <div><span>Location: Tirupathi</span></div>
+                        <div><span>Rank: 7</span></div>
+                    </div>
+                </div>
+                <div id="stu10">
+                    <div>
+                        <div class="stu_photo pho10"></div>
+                    </div>
+                    <div class="stu_info">
+                        <div><span>Name: Pallavi</span></div>
+                        <div><span>Age: 19</span></div>
+                        <div><span>Gender: Female</span></div>
+                        <div><span>Location: Mumbai</span></div>
+                        <div><span>Rank: 9</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="copywrite">
+                Web Page Copy write @DevaramNagesh
+            </div>
+        </div>
+    </body>
+</html>

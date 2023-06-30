@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css priority</title>
+    <style>
+        .content{
+            background-color: rgba(242, 9, 9, 0.885);
+            font-size: 40px !important;
+        }
+        #myContainer{
+            background-color: rgba(242, 9, 149, 0.926);
+            font-size: 50px;
+        }
+        p{
+            background-color: rgba(9, 9, 242, 0.885) !important;
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 60px;  color: rgb(9, 237, 9);" class="content" id="myContainer">hello</p>
+</body>
+</html>

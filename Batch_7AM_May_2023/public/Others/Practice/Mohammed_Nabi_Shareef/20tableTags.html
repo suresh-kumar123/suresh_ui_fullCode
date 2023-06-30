@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tableContainer {
+            border: 1px solid;
+            height: 207.33px;
+            width: 586.19px;
+            margin: 10px;
+            position: absolute;
+            left: 600px;
+            bottom: 401.55px
+        }
+        table {
+            margin: 10px;
+        }
+        .rowHeader h4 {
+            border: 1px solid;
+            display: inline-block;
+            height: 20px;
+            width: 80px;
+            margin: 9px;
+            padding: 6px;
+            text-align: center;
+        }
+        .tableContainer .row div {
+            border: 1px solid;
+            display: inline-block;
+            height: 20px;
+            width: 80px;
+            margin: 9px;
+            padding:6px;
+            text-align: center;
+        }
+        .block div {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h4>
+        Demonstrating Table Tags - Student Details
+    </h4>
+    <table border="1px solid #ddd;" cellpadding="10px" cellspacing="10px">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>AGe</th>
+                <th>Current Location</th>
+                <th>Premnt Location</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Raj</td>
+                <td>20</td>
+                <td>Hyderabad</td>
+                <td>Pune</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Albert</td>
+                <td>22</td>
+                <td>USA</td>
+                <td>India</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Teena</td>
+                <td>20</td>
+                <td colspan="2">Delhi</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Krish</td>
+                <td>20</td>
+                <td rowspan="2">Hyderabad</td>
+                <td>Chennai</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Suresh</td>
+                <td>22</td>
+                <td>Visag</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="tableContainer">
+        <div class="rowHeader">
+            <h4>Sno</h2>
+            <h4>Name</h2>
+            <h4>Age</h2>
+            <h4>Gender</h2>
+            <h4>Location</h2>
+        </div>
+        <div class="row">
+            <div>1</div>
+            <div>Raj</div>
+            <div>20</div>
+            <div>Male</div>
+            <div>Hyderabad</div>
+        </div>
+        <div class="row">
+            <div>1</div>
+            <div>Raj</div>
+            <div>20</div>
+            <div>Male</div>
+            <div>Hyderabad</div>
+        </div>
+        <div class="row">
+            <div>1</div>
+            <div>Raj</div>
+            <div>20</div>
+            <div>Male</div>
+            <div>Hyderabad</div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="block1">Block1</div>
+        <div class="block2">Block2</div>
+        <div class="block3">Block3</div>
+        <div class="block4">Block4</div>
+        <div class="block5">Block5</div>
+    </div>
+</body>
+</html>

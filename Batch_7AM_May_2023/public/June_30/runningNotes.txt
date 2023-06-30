@@ -1,0 +1,11 @@
+Function 
+
+    Allways start with Function keyworkd
+    2. Function set of instructions binded between curly braces, assigned with a userdefined name
+    3. Once we define a function, in can be invoked any no. of times/ any where u wanted in the application
+
+    4. 
+
+    Adv:
+        1. Avoid redundency of code 
+        2. Acheive modularity

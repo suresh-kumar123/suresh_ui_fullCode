@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong Number Checker Array</title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            var result = 0;
+            for(var i = 0; i < 5; i++){
+                data[i] = prompt("Enter values for the psoition: " +i);
+                data[i] = parseInt(data[i]);
+            }console.log(data);
+
+            for(i = 0; i < data.length; i++){
+                var y = data[i];
+                var cube1 = 0;
+                var rem = 0;
+                while(y > 0){
+                rem = y % 10;
+                cube1 = cube1 + (rem*rem*rem);
+                y = y / 10;
+                y = parseInt(y);
+                }
+                if(cube1 == data[i]){
+                console.log(data[i]);
+                }
+            }
+        </script>
+    </body>
+</html>

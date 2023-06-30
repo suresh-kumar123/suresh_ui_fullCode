@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo attr</title>
+    <style>
+        .container{
+            border: 2px solid gold;
+            width: 100px;
+            height: 100px;
+        }
+        .container:hover {
+            background-color: brown;
+        }
+        a:focus {
+            font-size: 25px;
+            background-color: rgb(183, 255, 0);
+        }
+        a:visited {
+            color:rgb(102, 0, 255);
+        }
+        div:empty {
+            border: 2px solid;
+            height: 100px;
+            width: 100px;
+        }
+        a:active {
+            color:rgb(255, 0, 0);
+        }
+        span:first-child{
+            background-color: cornflowerblue;
+        }
+        span:last-child{
+            background-color: rgb(5, 238, 161);
+        }
+        span:nth-child(3) {
+            background-color: rgb(178, 240, 6);
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        hyyyy
+    </div>
+    <a href="https://www.google.co.in/webhp">google</a>
+    <a href="https://www.amazon.co.in">amazon</a>
+    <a href="https://www.ebay.com/">ebay</a>
+    <a href="https://getbootstrap.com/">bootstrap</a>
+    <a href="https://www.wikipedia.co.in">wikipedia</a>
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+    <div>item 5</div>
+    <div>
+        <span>1.Rk</span>
+        <span>2.hk</span>
+        <span>3.pk</span>
+        <span>4.Rk</span>
+        <span>5.sk</span>
+    </div>
+    
+</body>
+</html>

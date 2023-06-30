@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+   padding-top: 25px;
+}
+.banner{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8gMcFikjSUd_HizkNrc2u-u6RDkpG5WCsPILK5UAzZQ&usqp=CAU&ec=48665701);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+}
+.image_cards{
+    margin-top: 35px;
+   
+}
+.student{
+    margin:20px;
+    margin-left: 13px;
+    line-height: 30px;
+}
+.text_bg{
+    background-color: rgb(130, 133, 133);
+    color: aqua;
+}
+.card{
+    padding: 0 0 0 0px;
+    border-radius: 10px;
+    margin-left: 38px;
+    background-color: antiquewhite;
+    height: 320px;
+    width: 250px;
+    margin-top: 5px;
+}
+img{
+    height: 166px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 250px;
+}

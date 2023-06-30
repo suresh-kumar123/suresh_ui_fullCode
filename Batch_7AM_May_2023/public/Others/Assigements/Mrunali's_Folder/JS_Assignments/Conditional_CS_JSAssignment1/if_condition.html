@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+</head>
+<body>
+    <script>
+         
+         var EmpName = prompt("Enter your Name");
+         var EmpAge = prompt("Enter your Age");
+         var EmpGender = prompt("Enter your Gender");
+         var EmpLoc = prompt("Enter your Location");
+         var EmpDept = prompt("Enter your Department"); 
+
+         var basicSal = prompt("Enter your basic Salary");
+             basicSal = parseInt(basicSal);
+         var pf = (basicSal * 12) / 100;
+         var Hrf = (basicSal * 24) / 100;
+         var totalSal = basicSal + Hrf + pf;
+             var Tax;
+        
+        console.log(" Employee name is " + EmpName); 
+        console.log(" Employee age is " + EmpAge); 
+        console.log(" Employee gender is " + EmpGender); 
+        console.log(" Employee location is " + EmpLoc); 
+        console.log(" Employee department is " + EmpDept);
+        console.log(" Employee totalSal is " + totalSal);  
+        console.log(" total tax is "+Tax);
+        
+         if(EmpGender == "Male"){
+            if ( totalSal >= 500000){
+             var tax = (totalSal*15)/100;
+            console.log("your salary is "+totalSal);
+            console.log("you have to pay 15% tax "+totalTax);
+           }
+
+           else if( totalSal >= 300000){
+           var tax = (totalSal*10)/100;
+            console.log("your sarary is "+totalSal);
+            console.log("you have to pay 10% tax "+totalTax);
+           }
+
+           else if ( totalSal >= 100000){
+            var tax = (totalSal*5)/100;
+            console.log("your salary is "+totalSal);
+            console.log("you have to pay 5% tax "+totalTax);
+           }
+           else {
+             msg = "NO TAX "
+            console.log(" congratulations you do not have to pay tax "+msg);
+           }
+         }
+
+         if(EmpGender == "FeMale"){
+            if ( totalSal >= 500000){
+            var tax = (totalSal*10)/100;
+            console.log("your salary is "+totalSal);
+            console.log("you have to pay 10% tax "+totalTax);
+           }
+
+           else if( totalSal >= 300000){
+            var tax = (totalSal*5)/100;
+            console.log("your salary is "+totalSal);
+            console.log("you have to pay 5% tax "+totalTax);
+           }
+           
+           else{
+           msg = "NO TAX "
+            console.log(" congratulations you do not have to pay tax "+msg);
+           } 
+           
+         }
+            
+            
+
+    </script>
+</body>
+</html>

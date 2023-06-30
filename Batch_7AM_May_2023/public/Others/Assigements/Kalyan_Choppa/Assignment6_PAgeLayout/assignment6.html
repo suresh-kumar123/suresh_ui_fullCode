@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Layout</title>
+        <style>
+            body{
+                background-color: blanchedalmond;
+            }
+            .Pageheader{
+                border: 2px solid black;
+                background-color: darkslategray;
+                color: blanchedalmond;
+                text-align: center;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .block1{
+                border: 1px solid black;
+                background-color: darkgray;
+                position: absolute;
+            }
+            .StudentName{
+                padding: 30px;
+                padding-left: 0px;
+            }
+            .block2{
+                border: 1px solid black;
+                background-color: darkslategrey;
+                margin: 2px;
+                position: absolute;
+                left: 155px;
+                top: 54px;
+                right: 5px;
+            }
+            .innerblock{
+                border: 1px solid black;
+                background-color: lightgray;
+                margin: 5px;
+            }
+            .imgblock{
+                width: 80px;
+                height: 80px;
+                background-image: url(StudentImage.png);
+                background-size: 165px 165px;
+                margin: 5px;
+                float: left;
+            }
+            .maleimg{
+                background-position: -2px -2px;
+            }
+            .femaleimg{
+                background-position: 81px -2px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="Pageheader">STUDENTS DETAILS</div>
+            <ol class="block1">
+                <li class="StudentName">Ram</li>
+                <li class="StudentName">Lakshman</li>
+                <li class="StudentName">Hari</li>
+                <li class="StudentName">Sushma</li>
+                <li class="StudentName">Preethi</li>
+                <li class="StudentName">Sita</li>
+            </ol>
+        <div class="block2">
+            <div class="innerblock">
+                <div class="imgblock maleimg"></div>
+                <div>Name: Ram</div>
+                <div>Age: 23</div>
+                <div>Gender: Male</div>
+                <div>Location: Hyderabad</div>
+                <div>Rank: 1</div>
+            </div> 
+            <div class="innerblock">
+                <div class="imgblock maleimg"></div>
+                <div>Name: Lakshman</div>
+                <div>Age: 22</div>
+                <div>Gender: Male</div>
+                <div>Location: UP</div>
+                <div>Rank: 2</div>
+            </div>
+            <div class="innerblock">
+                <div class="imgblock maleimg"></div>
+                <div>Name: Hari</div>
+                <div>Age: 22</div>
+                <div>Gender: Male</div>
+                <div>Location: Pune</div>
+                <div>Rank: 3</div>
+            </div> 
+            <div class="innerblock">
+                <div class="imgblock femaleimg"></div>
+                <div>Name: Sushma</div>
+                <div>Age: 21</div>
+                <div>Gender: Female</div>
+                <div>Location: Delhi</div>
+                <div>Rank: 4</div>
+            </div>
+            <div class="innerblock">
+                <div class="imgblock femaleimg"></div>
+                <div>Name: Preethi</div>
+                <div>Age: 21</div>
+                <div>Gender: Female</div>
+                <div>Location: AP</div>
+                <div>Rank: 5</div>
+            </div> 
+            <div class="innerblock">
+                <div class="imgblock femaleimg"></div>
+                <div>Name: Sita</div>
+                <div>Age: 22</div>
+                <div>Gender: Female</div>
+                <div>Location: Hyderabad</div>
+                <div>Rank: 6</div>
+            </div>            
+        </div>
+    </body>
+</html>

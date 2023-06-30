@@ -1,0 +1,39 @@
+CS 
+    conditional CS 
+
+    Looping CS 
+        for loop 
+            for (initilization; condiiton; inc/dec ) {
+                ... 
+                ..
+            }
+
+        while loop 
+            ...
+            while (condition) {
+                ... 
+                ...
+            }
+            ...
+------------------
+
+repeating set of instructions based the iteration count - For loop 
+
+repeating set of instructions based on only the condition - While loop
+----------------
+
+do while -> first the statements gets executed, later it will check for condition 
+
+Syntax:
+ do {
+        ...
+        ....
+
+        ...
+    } while (condiiton);
+----
+
+while(condiiton) {
+    .. 
+    .. 
+}

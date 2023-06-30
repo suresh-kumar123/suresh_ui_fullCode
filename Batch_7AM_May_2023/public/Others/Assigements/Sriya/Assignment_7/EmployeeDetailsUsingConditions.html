@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("Enter Employee Name");
+            var age = prompt("Enter age");
+            var gender = prompt("Enter your gender");
+            var male = "male";
+            var female = "Female";
+            var department = prompt("Enter department");
+            var basicsal = parseInt(prompt("Enter basic salary"));
+
+            var pf = (basicsal*12)/100;
+
+            var hra = (basicsal*24)/100;
+
+            var Totalsal = basicsal + pf + hra ;
+
+            var tax1 = (Totalsal*15)/100;
+            var tax2 = (Totalsal*10)/100;
+            var tax3 = (Totalsal*5)/100;
+
+            console.log("Your name is " + name);
+            console.log("Your age is " + age);
+            console.log("Your gender is " + gender);
+            console.log("You are from " + department + " department.");
+            console.log("Your basic salary " + basicsal);
+            console.log("Your total salary is " + Totalsal);
+            
+
+            if (gender = male) {
+                if (Totalsal >= 500000) {
+                    console.log("Tax is " + tax1);
+                } else if (Totalsal >= 300000){
+                    console.log("Tax is " + tax2);
+                } else if (Totalsal >= 100000) {
+                    console.log("Tax is " + tax3);
+                } else {
+                    console.log("No tax.");
+                }
+            }
+            else if (gender = female) {
+                if (Totalsal >= 500000) {
+                    console.log("Tax is " + tax3);
+                } else if (Totalsal >= 300000){
+                    console.log("Tax is " + tax2);
+                } else {
+                    console.log("No tax.");
+                }
+            }
+        </script>
+    </body>
+</html>

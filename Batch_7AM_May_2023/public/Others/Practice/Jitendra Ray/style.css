@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: blanchedalmond;
+}
+.container{
+    margin: o auto;
+    max-width: 900px;
+}
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: aqua;
+    margin: 0;
+    margin-left: 300px;
+    margin-top: 20px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 1);
+    border-radius: 10px
+}
+.title_small{
+    font-size: 20px;
+
+}
+.form_control{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction:column;
+}
+label{
+    font-size: 20px;
+}

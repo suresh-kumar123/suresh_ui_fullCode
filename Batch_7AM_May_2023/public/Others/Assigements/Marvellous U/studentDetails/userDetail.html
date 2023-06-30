@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+       <style>
+        a{ 
+            text-decoration: none;
+               color: #000
+        }
+        .h3{
+            border : 1px solid black;  
+            padding: 10px; 
+            margin: 10px; 
+            text-align: center;
+        }
+        .container{
+            border: 1px solid black; 
+            padding: 10px;
+            margin: 5px; 
+            display: flex; 
+           
+           
+        }
+        .lblock{
+            border: 1px solid black; 
+            width: 40%;
+            flex: 1;  
+            padding: 5px; 
+            margin: 5px; 
+        }
+        .lblock li{
+            border: 1px solid black; 
+            padding: 5px; 
+            margin: 5px; 
+            list-style-position: inside;
+           
+        }
+        .rblock{
+            padding: 5px; 
+            margin: 5px; 
+            width: 60%; 
+            flex: 1; 
+            overflow: auto;
+            height:750px;
+        }
+        .rblock{
+            border: 1px solid black; 
+            padding: 5px; 
+            margin: 5px;  
+        }
+        .lblock li:hover{
+            cursor: pointer; 
+            background-color: aqua;
+        }
+
+        .students li{
+            border: 1px solid black; 
+            display: flex;
+            margin: 10px; 
+            padding: 10px; 
+        }
+        .ImgContainer{
+            flex: 1; 
+            
+
+        }
+        .details li{
+            flex: 1; 
+            border: none; 
+            padding: 10px; 
+        } 
+        .header{
+            text-align: center;
+            border: 1px solid black; 
+            margin: 5px; 
+        }
+        
+        .footer{
+            text-align: center;
+            border: 1px solid black; 
+            margin: 5px; 
+        }
+
+
+       </style>
+        <title> 
+            homepage 
+        </title>
+    </head>
+    <body> 
+        <div class = "header"> 
+            <h3> Student Details</h3>
+        </div>
+        <div class = container> 
+            <div class = lblock> Student Name 
+                <ol> 
+                    <li id = "#details1"> Rajesh Sharma </li>
+                    <li>
+                      <a href ="#details2">
+                        Priya Paul
+                        </a>
+                    </li>
+                    <li> 
+                        <a href ="#details3">
+                            Sanjay Singh</li>
+                        </a>
+                    <li> 
+                        <a href ="#details4">
+                         Ritu Kapoor
+                        </a> </li>
+                    <li> 
+                        <a href ="#details5">
+                            Deepak verma
+                        </a>
+                    </li>
+                    <li> 
+                        <a href ="#details6"> 
+                            Anita Gupta
+                        </a>
+                    </li>
+                    <li> 
+                        <a href ="#details7">
+                            Manish Tiwarri
+                        </a></li>
+                    <li> 
+                        <a href ="#details8">
+                            Neha Joshi</li>
+                        </a>
+                    <li> 
+                        <a href ="#details9">
+                             Vikram kumar
+                            </a>
+                        </li>
+                    <li>
+                        <a href ="#details10">
+                             Pooja Mehita
+                        </a>
+                     </li>
+                </ol>
+            </div>
+            <div class = "rblock"> 
+                <ul class = "students">
+                
+                    <li id ="#details1"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = " student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Rajesh Sharma</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details2"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = " student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Priya Paul</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="detail3"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = " student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Sanjay Singh</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id = "details4"> 
+                       
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = " student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Ritue Kapoor</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details5"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = " student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Deepak Verma</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details6"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = "student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Anita Gupta</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details7"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = "student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Manish Tiwarri</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details8"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = "student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Neha Kumar</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="details9"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = "student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Vikram Kumar</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li id ="#details10"> 
+                        <div class = "ImaContainer"> 
+                            <img src = "Joshua.png" alt = "student photograph" height= 200> 
+                        </div>
+                        <div class = "details">
+                            <ul> 
+                                <li> Name: Pooja Mehita</li>
+                                <li> Age: 20 </li>
+                                <li> Gender: Male</li>
+                                <li> Locaiton: Berlin </li>
+                            </ul> 
+                        </div>
+                    </li>
+
+                 </ul>
+
+                
+            </div>
+        </div>
+        <div Class = "footer">
+            <h4> @Copyright 2023 </h4>
+        </div>
+    </body>
+</html>

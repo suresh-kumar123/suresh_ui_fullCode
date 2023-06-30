@@ -1,0 +1,64 @@
+JS Engine 
+    Chrome js - V8
+
+Datatype - > 2 things
+    1. specifies what type of data can be stored within a variable
+
+    2. specifies What size it can hold
+
+Datatypes:
+
+    C 
+        int, float, char, double, boolean,etc.
+        INT 2 BYTES
+
+        float 4 bytes 
+
+        char 1 bytes 
+        ... 
+
+
+        int a, b, c;
+        a = 34.45
+        b = 5044544
+        c = a + b\
+
+        long a = 90;
+        a = 234234
+
+        
+
+        -----------------------------
+
+
+javascript: 
+    number - 90, 34234, 45.4345
+    string - "abc", 'testing', "hslkj234@#$", "c"
+    boolean - true/false 
+    function - 
+    undefined - 
+    null - 
+    object - 
+    -------------------------------------
+    var a, b, c;
+    a = 90
+    b = 44345345345345345
+    c = a + b
+
+
+
+    var a;
+    a = 90;
+    a = 99.3
+    a = "test"
+    a = true 
+    a = [434,3,4,4]
+
+    
+
+----------------
+name() - method
+alert()
+console.log()
+typeof()
+JSON.stringify()

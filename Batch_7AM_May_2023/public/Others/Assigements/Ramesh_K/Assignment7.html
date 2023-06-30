@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice_01</title>
+  </head>
+  <body>
+    <script>
+      var msg, TPer;
+
+      var eName = prompt("Enter Employee Name");
+      var eAge = prompt("Enter Employee Age");
+      var eGender = prompt("Enter Employee Gender");
+      var eLocation = prompt("Enter Employee Location");
+      var eDept = prompt("Enter Employee Department");
+      var eBSal = prompt("Enter Employee Basic Salary");
+      eBSal = parseInt(eBSal);
+
+      var pf = (eBSal * 12) / 100;
+      var hra = (eBSal * 24) / 100;
+      var Tsal = eBSal + pf + hra;
+
+      if (eGender == "Male") {
+        if (Tsal >= 500000) {
+          var Tper = 15;
+        } else if (Tsal >= 300000) {
+          var Tper = 10;
+        } else if (Tsal >= 100000) {
+          var Tper = 5;
+        } else {
+          msg = "No Tax";
+          alert(msg);
+        }
+        var TTax = (Tsal * Tper) / 100;
+        console.log(
+          "Mr: " +
+            eName +
+            "\n" +
+            "Gender: " +
+            eGender +
+            "\n" +
+            "Tax %: " +
+            Tper +
+            "\n" +
+            "Location: " +
+            eLocation +
+            "\n" +
+            "Department:  " +
+            eDept +
+            "\n" +
+            "Total Salary (Rs): " +
+            Tsal +
+            "\n" +
+            "Total Taxes (Rs): " +
+            TTax
+        );
+        msg =
+          "Mr: " +
+          eName +
+          "\n" +
+          "Gender: " +
+          eGender +
+          "\n" +
+          "Tax %: " +
+          Tper +
+          "\n" +
+          "Location: " +
+          eLocation +
+          "\n" +
+          "Department:  " +
+          eDept +
+          "\n" +
+          "Total Salary (Rs): " +
+          Tsal +
+          "\n" +
+          "Total Taxes (Rs): " +
+          TTax;
+        alert(msg);
+      } else if (eGender == "Female") {
+        if (Tsal >= 500000) {
+          var Tper = 10;
+        } else if (Tsal >= 300000) {
+          var Tper = 5;
+        } else {
+          msg = "No Tax";
+          alert(msg);
+        }
+
+        var TTax = (Tsal * Tper) / 100;
+        console.log(
+          "Ms: " +
+            eName +
+            "\n" +
+            "Gender: " +
+            eGender +
+            "\n" +
+            "Tax %: " +
+            Tper +
+            "\n" +
+            "Location: " +
+            eLocation +
+            "\n" +
+            "Department:  " +
+            eDept +
+            "\n" +
+            "Total Salary (Rs): " +
+            Tsal +
+            "\n" +
+            "Total Taxes (Rs): " +
+            TTax
+        );
+        msg =
+          "Ms: " +
+          eName +
+          "\n" +
+          "Gender: " +
+          eGender +
+          "\n" +
+          "Tax %: " +
+          Tper +
+          "\n" +
+          "Location: " +
+          eLocation +
+          "\n" +
+          "Department:  " +
+          eDept +
+          "\n" +
+          "Total Salary (Rs): " +
+          Tsal +
+          "\n" +
+          "Total Taxes (Rs): " +
+          TTax;
+        alert(msg);
+      } else {
+        alert("Please enter Gender Details");
+      }
+    </script>
+  </body>
+</html>

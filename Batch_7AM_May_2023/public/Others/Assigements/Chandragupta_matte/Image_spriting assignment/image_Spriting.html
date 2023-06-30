@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image spriting</title>
+    <link rel="icon" href="file:///G:/Naresh%20IT/UIclasses_server/public/Day11/Practice/images/favicon.png">
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:larger;
+            font-style: italic;
+            font-variant: small-caps;
+            background-color: lightcoral;
+        }
+        .imageBlock{
+            width: 205px;
+            height: 205px;
+            border: 1px solid;
+            background-image: url('images/employee_image_merg.jpg');
+            background-color: lightsalmon;
+        }
+        .employ1{
+            background-position: -195px 1px;
+        }
+        .employ2{
+            background-position: 5px 5px;;
+        }
+        .employ3{
+            background-position: -402px 0px;
+        }
+        .employ4{
+            background-position: -18px -228px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Employee details</h2>
+    <hr>
+    <div class="details">
+        <div>Name: Teena</div>
+        <div>Department: Finance</div>
+        <div>Location: Mumbai</div>
+        <div class="imageBlock employ1"></div>
+    </div>
+    <hr>
+    <div class="details">
+        <div>Name: Raj</div>
+        <div>Department: Developer</div>
+        <div>Location: Pune</div>
+        <div class="imageBlock employ2"></div>
+    </div>
+    <hr>
+    <div class="details">
+        <div>Name: Rajesh</div>
+        <div>Department: Sr. Developer</div>
+        <div>Location: Delhi</div>
+        <div class="imageBlock employ3"></div>
+    </div>
+    <hr>
+    <div class="details">
+        <div>Name: Ram</div>
+        <div>Department: support staff</div>
+        <div>Location: Hyderabad</div>
+        <div class="imageBlock employ4"></div>
+    </div>
+    <hr>
+</body>
+
+</html>

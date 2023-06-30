@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo classes</title>
+        <style>
+            p:only-child{
+                background-color: brown;
+                color: rgb(69, 12, 201)
+            }
+            a:hover{
+                background-color: blue;
+                color: yellow;
+            }
+            a:active{
+                background-color: #00ffbf;
+                color: rgb(255, 0, 0);
+            }
+            a:visited{
+                background-color: black;
+
+                color: #11fc21;           
+             }
+             a:link{
+                background-color: rgb(14, 140, 237);
+                color: rgb(207, 241, 10);
+             }
+             a:focus{
+                font-size: 30px;
+               
+                background-color:rgb(20, 233, 84) ;
+             }
+             span:first-child{
+                color: red;
+                background-color: yellow;
+             }
+             span:last-child{
+                color: red;
+                background-color: yellow;
+             }
+             span:nth-child(4){
+                color: rgb(234, 13, 127);
+                background-color: rgb(19, 243, 71);
+             }
+             div:empty{
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+             }
+             
+           
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <p>India and China on Wednesday held in-person diplomatic talks and discussed proposals for 
+            disengagement in the remaining friction points along the Line of Actual Control (LAC) in 
+            eastern Ladakh in a 'frank and open manner'. Both sides also agreed to hold the 19th round 
+            of high-level military talks at an early date to achieve the objective of restoration of 
+            peace and tranquillity in the border areas. The two nations agreed to continue discussions 
+            through military and diplomatic channels.</p>
+        </div>
+        <a href="http://www.google.com" target="_blank">GOOGLE</a>
+        <a href="http://www.amazon.com" target="_blank">Amazon</a>
+        <a href="http://www.shopclues.com" target="_blank">Shopclues</a>
+        <a href="http://www.flipkart.com" target="_blank">Flipkart</a>
+        <a href="http://www.ebay.com" target="_blank">Ebay</a>
+        <a href="http://www.myntra.com" target="_blank">myntra</a>
+        <a href="http://www.facebook.com" target="_blank">Ebay</a>
+        <a href="http://www.nareshit.com" target="_blank">myntra</a>
+
+        <div>
+            <span>gowthami</span>
+            <span>gowthami</span>
+            <span>gowthami</span>
+            <span>gowthami</span>
+            <span>gowthami</span>
+            <span>gowthami</span>
+        </div>
+
+        <div>item 1</div>
+        <div>item 2</div>
+        <div></div>
+        <div>item 4</div>
+        <p>
+            
+        </p>
+
+        
+        
+    </body>
+</html>

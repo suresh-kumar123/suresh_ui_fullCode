@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of Individual Numbers</title>
+    </head>
+    <body>
+        <script>
+            var n = parseInt(prompt("Enter a Number"));
+            var rem, count = 0;
+            while (n > 0){
+                rem = n % 10; 
+                //console.log(rem);
+                count += rem;
+                n = Math.floor(n / 10);
+                // console.log(n);
+            }
+            console.log(count);
+            
+        </script>
+    </body>
+</html>

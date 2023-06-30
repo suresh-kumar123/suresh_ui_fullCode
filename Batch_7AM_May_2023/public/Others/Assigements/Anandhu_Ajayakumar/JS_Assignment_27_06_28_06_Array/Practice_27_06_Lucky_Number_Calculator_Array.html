@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luck Number Calculator</title>
+    </head>
+    <body>
+        <script>
+            var data = [];         
+            for(var i = 0; i < 5; i++){
+                data[i] = prompt("Enter values for the psoition: " +i);
+                data[i] = parseInt(data[i]);
+            }console.log(data);
+            for(i = 0; i < data.length; i++){
+                var n = data[i]
+                var luckNumber = 0;
+                var rem = 0;
+                while(n > 0){                    
+                    rem = n % 10;
+                    n = n / 10;
+                    n = parseInt(n);
+                    luckNumber += rem;
+                    if(n == 0 && luckNumber > 9){
+                        n = luckNumber;
+                        luckNumber = 0;
+                    }
+                }console.log("The lucky number for " +data[i]+ " is " +luckNumber);
+            }         
+        </script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputtypeElements</title>
+</head>
+<style>
+    .heading{
+        text-align: center;
+        text-decoration: underline;
+        border:1px solid black;
+    }
+    .Container{
+        text-align:left;
+        margin: auto;
+        border:1px solid red;
+        width:500px;
+        height:500px;
+    }
+    li{
+        list-style-type: none;
+        margin: 10px;
+        border:1px solid brown;
+        padding: 10px;
+    }
+    .self{
+        position: relative;
+        top:-70px;
+    }
+    .foot{
+        border: 1px solid blueviolet;
+        text-align: center;
+    }
+</style>
+<body>
+    <h2 class="heading">Studentsdetails</h2>
+    <div class="Container">
+        <form method="post" action="https://www.samplepage.com">
+            <ul>
+                <li>
+                    <label for="uname">
+                        Username:
+                    </label>
+                    <input type="text" name="uname" maxlength="10"required>
+                </li>
+                <li>
+                    userpassword:
+                    <input type="password" name="upass" maxlength="7">
+                </li>
+                <li>
+                    Gender:
+                    <input type="radio"name="gender" checked disabled>Male
+                    <input type="radio"name="gender">Female
+                </li>
+                <li>
+                    Location:
+                    <select name="country">
+                        <option></option>
+                        <option checked>USA</option>
+                        <option>UAE</option>
+                        <option>UK</option>
+                        <option>USSR</option>
+                        <option>INDIA</option>
+                    </select>
+                </li>
+                <li>
+                    languagesKnown:
+                    <input type="checkbox" name="language"checked disabled>English
+                    <input type="checkbox" name="language">Hindi
+                    <input type="checkbox" name="language">Telugu
+                    <input type="checkbox" name="language">Urdu
+                    <input type="checkbox" name="language">Kannada
+                </li>
+                <li>
+                    <span class="self">Typeyourself:</span>
+                    <textarea name="text" id="" cols="30" rows="5"></textarea>
+                </li>
+                <li>
+                    <input type="submit"value="Registerhere">
+                    <input type="reset" value="Reset">
+                </li>
+            </ul>
+        </form>
+        <div>
+            <h4 class="foot">&copy;copyright2023</h4>
+        </div>
+    </div>
+</body>
+</html>

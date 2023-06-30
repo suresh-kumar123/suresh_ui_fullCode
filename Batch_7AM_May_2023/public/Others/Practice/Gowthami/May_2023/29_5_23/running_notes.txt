@@ -1,0 +1,7 @@
+overview of inline and block level elements
+instead of br tag we use div tag in order to break a line
+div tag and span tag explained
+css overflow property
+overflow:hidden, scroll,auto,visisble
+overflow-x
+overflow-y

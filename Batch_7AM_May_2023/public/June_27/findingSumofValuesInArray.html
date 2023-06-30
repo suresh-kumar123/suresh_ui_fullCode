@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // var data = [34, 56, 78, 90, 34.5];
+            var data = [];
+            // data[0] = prompt("enter value for 0 position");
+            // data[1] = prompt("enter value for 1 position");
+            // data[2] = prompt("enter value for 2 position");  
+            var n = prompt("enter size");
+            n = parseInt(n);
+            for (var i = 0 ; i < n; i++) {
+                data[i] = prompt("enter value for position " + i);
+                data[i] = parseInt(data[i]);
+            }
+
+            var result = 0;
+
+            for (var i = 0; i < data.length; i++) {
+                result = result + data[i];
+            }
+
+            console.log('the result is ' + result);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details Withe Array</title>
+  </head>
+  <body>
+    <script>
+      var marks = [];
+      var total = 0;
+      var sname = prompt("Enter student name : ");
+      var sage = prompt("Enter age : ");
+      var sgender = prompt("Enter gender : ");
+
+      var sgender = prompt("Enter mark" + 1 + " : ");
+
+      for (var i = 0; i <= 5; i++) {
+        var m = i + 1;
+        marks[i] = prompt("Enter mark" + m + " : ");
+        marks[i] = parseInt(marks[i]);
+      }
+
+      for (var i = 0; i < marks.length; i++) {
+        total += marks[i];
+      }
+      var avg = total / marks.length;
+      console.log("Student details");
+      console.log("Student name " + sname);
+      console.log("Student age " + sage);
+      console.log("Gender " + sgender);
+      console.log("Total is " + total);
+      console.log("Avg is " + avg);
+    </script>
+  </body>
+</html>

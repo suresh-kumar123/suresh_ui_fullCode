@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky Number Program</title>
+    </head>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a Number to find Lucky number of it?"));
+            var rem, luckyNum = 0; 
+            while (num > 0){
+                rem = num % 10;
+                num = Math.floor( num / 10 );
+                luckyNum += rem;
+                if ( num == 0 && luckyNum > 9){
+                    num = luckyNum;
+                    luckyNum = 0;
+                }
+            }
+            console.log(luckyNum);
+
+        </script>
+    </body>
+</html>

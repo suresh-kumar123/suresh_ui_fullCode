@@ -1,0 +1,20 @@
+div 
+
+
+UL
+    li
+
+    li 
+
+
+OL
+    li
+
+-----------------
+
+css display property 
+
+    display: none/inline/block/inline-block/  flex/grid
+
+---------------------
+Float 

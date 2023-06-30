@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Date class  - methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var monthNames = ["Jan", 'Feb', 'MAr', 'Apr', 'May', 'June', 'July'];
+
+            var fullMonthNames = []
+
+            var dayNames = ['Sun', "Mon", 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+
+            var cDate = new Date();
+
+            var myOwnDate = new Date("Jun 22 2023");
+            console.log(cDate);
+            console.log(myOwnDate);
+
+            console.log(cDate.getDate());
+            console.log(cDate.getFullYear())
+            console.log(cDate.getMonth());
+            var monthIndex = cDate.getMonth();
+            console.log(monthNames[monthIndex]);
+            console.log(cDate.getDay());
+            console.log(dayNames[cDate.getDay()]);
+
+            // mm/dd/yy, Monthname / date/ fullyear
+            var fullyear = cDate.getFullYear().toString();
+            var myDateFormat1 = (cDate.getMonth() + 1) + '/' + cDate.getDate() + '/' + fullyear.substr(2, 4);
+            console.log(myDateFormat1);
+
+            var myDateFormat2 = monthNames[cDate.getMonth()] + '/' + cDate.getDate() + '/' + cDate.getFullYear();
+
+            console.log(myDateFormat2)
+
+           console.log(Date.now())
+
+            /*
+            Examples:
+            1. 30th June, 2023
+            2. June, 30th 2023
+            3. Friday, 30th June 2023
+            4. Fri, 30th June 2023
+            5. 30/06/23
+            6. 30-June-2023
+            7. 07:34:5
+            8. 30th Jun, 2023 07hrs:30 min
+            9. June 30th
+            10. June 30th 2023, 07:03:56
+
+            */
+        </script>
+    </body>
+</html>

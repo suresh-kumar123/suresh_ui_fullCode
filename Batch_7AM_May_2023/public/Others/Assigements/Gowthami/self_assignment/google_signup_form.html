@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google signup form</title>
+        <style>
+            .container{
+                width: 400px;
+                height: 500px;
+                margin: auto;
+                border: 1px solid royalblue;
+                position: relative;
+                top: 100px;
+                }
+                .logo{
+                    margin: auto;
+                    width: 140px;
+                    height: 30px;
+                   left: 0px;
+                    position: relative;
+                    top: 40px;
+                    /* border: 1px solid; */
+                }
+                img{
+                    width: 130px;
+                    height: 30px;
+                }
+                h2{
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                p{
+                    text-align: center;
+                    margin-top: -10px;
+                }
+                ul{
+                    list-style: none;
+                }
+                input{
+                    width: 150px;
+                    height: 30px;
+                }
+                .lastname{
+                    position: relative;
+                    bottom: 35px;
+                    left: 180px;
+                }
+                .user_name{
+                    width: 330px;
+                    position: relative;
+                }
+                .username_below{
+                    
+                    position: relative;
+                    bottom: 20px;
+                    left: 5px;
+                    font-weight: lighter;
+                    
+                }
+                .cnfmpswd{
+                    position: relative;
+                    bottom: 45px;
+                    left: 180px;
+                    
+                }
+                .pswd{
+                    position: relative;
+                    bottom: 10px;
+                }
+                .head{
+                    font-weight: lighter;
+                    position: relative;
+                    bottom: 60px;
+                }
+                .login{
+                    position: relative;
+                    bottom: 60px;
+                    font-weight: lighter;
+                }
+                span{
+                    color: blue;
+                    font-weight: bolder;
+                }
+                .register{
+                    position: relative;
+                    bottom: 50px;
+                    left: 250px;
+                    width: 80px;
+                    text-align: center;
+                    background-color: rgba(18, 243, 168, 0.947);
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="google_image.jpg">
+            </div>
+
+            <h2>Sign Up</h2>
+            <p>to continue to application</p>
+
+            <form action="" method="">
+                <ul>
+                    <li>
+                        <input type="text" name="First_Name" placeholder="First Name" class="firstname">
+                    </li>
+                    <li>
+                        <input type="text" name="Last_Name" placeholder="Last Name" class="lastname">
+                    </li>
+                    <li>
+                        <input type="text" name="username" placeholder="username" class="user_name">
+                    </li>
+                    <h5 class="username_below">you can pick your Email or Mobile number as Username</h5>
+                    <li>
+                        <input type="password" name="pswd" placeholder="password" class="pswd">
+                    </li>
+                    <li>
+                        <input type="password" name="cnfmpswd" placeholder="confirm" class="cnfmpswd">
+                    </li>
+                    <h5 class="head">
+                        use 8 or more charecters with a mix of numbers,letters & symbols
+                    </h5>
+
+                    <h4 class="login">
+                        I have an account <span>Login Now</span> 
+                    </h4>
+
+                    <li>
+                        <input type="sumbit" value="REGISTER" class="register">
+                    </li>
+                </ul>
+
+            </form>
+
+        </div>
+        
+    </body>
+</html>

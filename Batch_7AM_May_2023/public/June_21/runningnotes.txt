@@ -1,0 +1,55 @@
+
+if (avg < 40) {
+    //failed
+} else if (avg >= 60) {
+    // first class 
+}
+
+
+if () {
+
+} else if(condition) {
+
+}
+-------------------------
+
+Difference btwn =, ==, === 
+
+    a = 90
+
+    a == 90 // true / flase
+----------------------------------------
+if (condition) {
+    ...
+    ..
+    ...
+}
+
+Looping CS 
+
+    for 
+
+        Syntax:
+
+            for (intialisation; condition; increment/decrement) {
+                ...
+                ...
+                ...
+            }
+
+    while 
+    do while 
+    
+    for each 
+    for of 
+    for in
+-----------------
+
+inctement and decrement operations 
+
+    a = 10;
+        a = a + 1  // 11
+        (or)
+        a += 1; // 11
+        (or)
+        a++;

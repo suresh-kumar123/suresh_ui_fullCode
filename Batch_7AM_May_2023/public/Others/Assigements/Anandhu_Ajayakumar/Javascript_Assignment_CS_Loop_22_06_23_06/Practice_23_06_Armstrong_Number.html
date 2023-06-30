@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong Number</title>
+    </head>
+    <body>
+        <script>
+            var x = 0;
+            while(x <= 1000){
+                var y = x;
+                var cube1 = 0;
+                var rem = 0;
+                while(y > 0){
+                rem = y % 10;
+                cube1 = cube1 + (rem*rem*rem);
+                y = y / 10;
+                y = parseInt(y);
+                }
+                if(cube1 == x){
+                console.log("The number " +x+ " is a Armstrong Number");
+                }x++;
+            }
+                 
+        </script>
+    </body>
+</html>

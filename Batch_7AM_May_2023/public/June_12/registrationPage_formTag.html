@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Detail Registration Page
+        </title>
+        <style>
+            h3, .container {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                text-align: left;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                width: 500px;
+                margin: 10px auto;
+            }
+            .textareaLabel {
+                top: -50px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student Detail Registration Page
+        </h3>
+        <div class="container">
+            <form method="GET" action="http://www.samplepage.com/data/info">
+                <ul>
+                    <li>
+                        <label for="uname">
+                            Enter user Name:
+                        </label>
+                        <input name="uname" type="text"  maxlength="10"  required>
+                    </li>
+                    <li>
+                        
+                        <input type="password" name="uactPwd" placeholder="enter password">
+                    </li>
+                    <li>
+                        Country Name: 
+                        <select name="userCountry" id="" >
+                            <option value="india">India</option>
+                            <option value="china">CHINA</option>
+                            <option value="jap" selected>JAPAN</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </li>
+                    <li>
+                        Gender:
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender" checked> Female
+                    </li>
+                    <li>
+                        Languages you know:
+                        <input type="checkbox" checked name="lng_eng"> English 
+                        <input type="checkbox" name="lng_tel"> Telugu
+                        <input type="checkbox" name="lng_urd"> Urdu
+                        <input type="checkbox" name="lng_hin"> Hindi
+                    </li>
+                    <li>
+                        <span class="textareaLabel"> Tell about urself:</span>
+                        <textarea id="" cols="20" rows="5" maxlength="250" name="aboutUser"></textarea>
+                    </li>
+                    <li>
+                        <input type="reset" value="Reset Data">
+                        <input type="submit" value="Register user">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

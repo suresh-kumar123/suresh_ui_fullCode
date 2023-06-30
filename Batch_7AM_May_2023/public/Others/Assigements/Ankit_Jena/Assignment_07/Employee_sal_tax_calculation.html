@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+    <style>
+
+        h1{
+            text-align: center;
+        border-style: solid;
+        text-decoration: underline;
+        color: #d71a1a;
+        border-width: 5px;
+        background-color: aquamarine;
+        }
+        .Container_1{
+            border-style: solid ;
+            border-color: black;
+            width: 340px;
+            height: 20px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .Label_01{
+            
+        }
+
+    </style>
+    <script>
+        var Emp_name = prompt("Enter Employee Name");
+        var Age = prompt("Enter Employee Age");
+        var Gender = prompt("Enter Employee Gender");
+        var Basic_sal = prompt("Enter Basic Salary");
+         Basic_sal =  parseInt(Basic_sal) ;
+         var pf = (Basic_sal* (12/100))/100;
+         var hra = (Basic_sal*(24/100))/100;
+         var Total_sal = Basic_sal+pf+hra ;
+         console.log("Total salary of the employee is  " + Total_sal) ;
+        // var tax = Total_sal / (15*100) ;
+        // console.log("Total tax diduction is"+ tax);
+
+        if(Total_sal>=500000){
+            var tax = Total_sal* 15/100;
+            console.log("Total Tax Deduction is" + tax);
+        }
+        else if(Total_sal>= 300000){
+            var tax = Total_sal*10/100;
+            console.log("Total tax deduction is" + tax);
+        }
+        else if(Total_sal>= 100000){
+            var tax = Total_sal*5/100;
+            console.log("Total tax deduction is" + tax);
+        }
+        
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Employee Salary Calculation</h1>
+    
+    <form action="avp.php" name="Emp_Salary"> 
+        <ul>
+            <li>
+               
+                    <label for="Emp_name" class="Label_01"> Name of The Employee</label>
+                    <input type="text" name="Emp_name" >
+                
+            </li>
+            <li>
+                 
+                       <label for="Emp_name" class="Label_01"> Age of The Employee</label>
+                       <input type="text" name="Emp_name" >
+                    
+            </li>
+            <li>
+                    
+                        <label for="Emp_name" class="Label_01"> Department</label>
+                        <input type="text" name="Emp_name" >
+                    
+            </li>
+            <li>
+                    
+                <label for="Emp_name" class="Label_01"> Basic Salary</label>
+                <input type="text" name="Emp_name" >
+
+            
+            </li>
+        </ul>
+      
+
+     
+
+      
+
+
+
+    </form>
+    
+</body>
+</html>

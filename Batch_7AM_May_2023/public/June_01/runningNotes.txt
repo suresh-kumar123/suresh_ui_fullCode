@@ -1,0 +1,25 @@
+PseudoElements: -> Used to apply css not to the complete content, but partially to the content can be done through PSeudoElements
+
+after 
+before 
+first-line
+first-letter
+.. 
+...
+
+-----------
+
+Syntax:
+
+    selector:pseudoclassname {
+
+    }
+
+    selector::pseudoElement {
+        ...
+         ..
+    }
+----------------------
+
+Background images /colors
+

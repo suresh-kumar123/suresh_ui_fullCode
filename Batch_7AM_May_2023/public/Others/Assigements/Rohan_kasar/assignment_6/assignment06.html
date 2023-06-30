@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment_no_06</title>
+</head>
+<body>
+    <script>
+        var name = prompt( "enter your name");
+        var age = prompt( "enter age");
+        var gender = prompt( "enter gender");
+        // var location = prompt("enter location");
+        var department = prompt("enter department");
+        var basicsalary = parseInt(prompt("enter salary"));
+        var pf = (basicsalary*0.12);
+        var HRA = (basicsalary * 0.24);
+        var total_salary = (basicsalary + pf + HRA);
+
+        console.log("employee name" +name);
+        console.log("gender is" +gender);
+        console.log("department name is" +department);
+        console.log("total salary is" +total_salary);
+
+        if (gender == 'male') {
+            if (total_salary >= 500000){
+                tax= total_salary * 0.15
+                console.log("tax is" +tax)
+            } else if ( total_salary>= 300000)
+            {tax = total_salary * 0.10
+             console.log("tax is" +tax)
+            }
+            else if (total_salary>= 100000){
+                tax = total_salary * 0.5
+                console.log("tax is" +tax)
+            }
+            else {
+                console.log("no tax")
+            }
+        }
+        else{
+            if (total_salary >= 500000){
+            tax = total_salary * 0.15
+            console.log("tax is " +tax)
+            }
+            else if (total_salary >= 300000){
+                tax = total_salary * 0.5
+                console.log ( "tax is" +tax)
+            } else {
+                console.log ( "no tax")
+            }
+        }
+
+    </script>
+</body>
+</html>

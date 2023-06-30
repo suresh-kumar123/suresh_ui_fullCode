@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reverse Number</title>
+    </head>
+    <body>
+        <script>
+            var x = prompt("Enter the number:");
+            x = parseInt(x);
+            y = x;
+            var reverse1 = 0;
+            var rem = 0;
+            while(x > 0){
+                rem = x % 10;
+                reverse1 = reverse1 * 10 + rem;
+                x = x / 10;
+                x = parseInt(x);
+            }console.log("Reverse of the number: " + y + " is " +reverse1);           
+        </script>
+    </body>
+</html>

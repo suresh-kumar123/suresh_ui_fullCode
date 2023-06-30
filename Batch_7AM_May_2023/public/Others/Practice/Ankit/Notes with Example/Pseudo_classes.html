@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_class</title>
+    <style>
+        *{
+            background-color: rgb(245, 245, 245);
+        }
+
+        #Main{
+            text-align: left;
+            color: rgb(0, 0, 0);
+            
+        }
+     #Main:hover{
+      background-color: blueviolet;
+      font-style: italic;
+      text-align: end;
+     }
+      .botton1:hover{
+      color:hotpink;
+      border-radius: 2rem;
+      background-color: blueviolet;
+      }
+      p:active{
+background-color: aquamarine;
+      }
+      .Boxes{
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        border: 10px solid;
+        margin: 3px;
+        padding: 5px;
+        background-color: violet;
+      }
+      .Boxes:hover{
+        background-color: blue;
+      }
+      .all_links:visited{
+       color: red;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <p>This is a Pseudo_class in active state</p>
+    <div id="Main">Pseudo class</div>
+    <button class="botton1">Click Here</button>
+    <div class="Boxes">Box1</div>
+    <div class="Boxes">Box2</div>
+    <div class="Boxes">Box3</div>
+    <div class="Boxes">Box4</div>
+    <a class="all_links" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_links">link</a>
+</body>
+</html>

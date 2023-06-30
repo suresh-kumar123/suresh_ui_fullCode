@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Practice</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin : 0;
+            }
+            .container {
+                background-color:#CCE4FF ;
+                height: 100vh;
+                display: flex;
+                flex-direction: row ;
+                justify-content: center;
+                
+            }
+            .card {
+                background-color:#E6F2FF ;
+                border-radius: 8px;
+                align-self: center;
+
+
+            }
+            /* button {
+                background-color: #B3D9FF;
+            } */
+            .card div  {
+                display: flex;
+                flex-direction: row;
+            }
+            input {
+                margin: 8px;
+                height: 28px;
+                width: 240px;
+            }
+            input::placeholder {
+                font-size: 16px;
+                color: #393A3A;
+            }
+            .email-div input {
+                width: 100%;
+            }
+        </style>
+        <div class="container">
+            <div class="card">
+                <div>
+                    <div class="first-name-div">
+                        <input type="text" placeholder="First Name"/>
+                    </div>
+                    <div class="last-name-div">
+                        <input type="text" placeholder="Last Name"/>
+                    </div>
+                </div>
+                <div class="email-div">
+                    <input type="email" placeholder="Enter E-mail id">
+                </div>
+                <!-- <button> Submit</button> -->
+            </div>
+        </div>
+        <script>
+
+        </script>        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var rem;
+      var sum = 0;
+      var LucNo = 0;
+      var n = prompt("Enter the value of n");
+      n = parseInt(n);
+
+      while (n > 0) {
+        rem = n % 10;
+        n = n / 10;
+        n = parseInt(n);
+        sum = sum + rem;
+      }
+      console.log("The sum is : " + sum);
+      var rem = 0;
+      while (sum > 0) {
+        rem = sum % 10;
+        sum = sum / 10;
+        sum = parseInt(sum);
+        if (sum != 0) {
+          LucNo = sum + rem;
+          console.log("The Lucky No is : " + LucNo);
+        }
+      }
+    </script>
+  </body>
+</html>

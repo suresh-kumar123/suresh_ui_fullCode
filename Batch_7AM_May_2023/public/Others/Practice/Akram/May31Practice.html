@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating on Margin and padding</title>
+    <style>
+        .parentContainer{
+            border: 1px solid;
+            height: 425px;
+            width: 400px;
+            text-align: right;
+            background-color: aqua;
+            border-color: blueviolet;
+            margin:-6px;
+            padding: 10px 20px;
+
+        }
+        .child{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+        .child1{
+            background-color: blue;
+            margin: 10px 30px;
+            padding: 15px 10px 12px 6px;
+        }
+        .child2{
+            background-color: rebeccapurple;
+        }
+        .child3{
+            background-color: yellowgreen;
+        }
+        .child1:hover{
+            background-color: chocolate;
+        }
+        a:visited   {
+            color: aquamarine;
+        }
+        a:focus   {
+            color: red;
+        }
+        p:first-child i{
+            color: palevioletred;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="parentContainer">
+        <div class="child child1">Block1</div>
+        <div class="child child2">Block2</div>
+        <div class="child child3">Block3</div>
+    </div>
+    <div>
+        <p class="news">First child <i>Hello World</i></p>
+        <p class="news">Second Child </p>
+        <p class="news">Third Child </p>
+        <p class="news">Fourth Child </p>
+    </div>
+    
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.fb.com/">Facebook</a>
+        <a href="https://www.flipkart.com/">Fkart</a>
+        <a href="https://www.amazon.com/">Amazon</a>
+        <a href="https://www.ebay.com/">Ebay</a>
+</body>
+</html>

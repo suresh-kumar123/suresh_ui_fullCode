@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Taxation using Conditional Control Structures</title>
+    </head>
+    <body>
+        <script>
+            var eName = prompt("Enter Employee Name :");
+            var eGender = prompt("Enter Employee Gender");
+            // var male = "male";
+            // var female = "female";
+            var eLocation = prompt("Enter Employee Location");
+            var eDepartment = prompt("Enter Employee Department");
+            var eBasicSalary = parseInt(prompt("Enter Employee Basic Salary"));
+
+            var ePF = parseInt((eBasicSalary * 12) / 100);
+            var eHRA = parseInt((eBasicSalary * 24) / 100);
+            var eTotalSalary = eBasicSalary + ePF + eHRA;
+                        
+
+            console.log("Employee Name is " + eName);
+            console.log("Employee Gender is " + eGender);
+            console.log("Employee Location is " + eLocation);
+            console.log("Employee Department is " + eDepartment);
+            console.log("Employee Basic Salary is " + eBasicSalary);
+            console.log("Employee PF is " + ePF);
+            console.log("Employee HRA is " + eHRA);
+            console.log("Employee Total Salary is " + eTotalSalary);
+
+
+            var eTax1 = parseInt((eTotalSalary * 15) / 100);
+            var eTax2 = parseInt((eTotalSalary * 10) / 100);
+            var eTax3 = parseInt((eTotalSalary * 5) / 100);
+            
+
+
+            if (eGender == "male") {
+                if(eTotalSalary >= 500000){
+                    console.log("Tax to be deducted is " + eTax1);
+                } else if (eTotalSalary >= 300000) {
+                    console.log("Tax to be deducted is " + eTax2);
+                } else if (eTotalSalary >= 100000) {
+                    console.log("Tax to be deducted is " + eTax3);
+                } else {
+                    console.log("Tax to be deducted is NILL");
+                } 
+            }
+            if (eGender == "female") {
+                if(eTotalSalary >= 500000){
+                    console.log("Tax to be deducted is " + eTax2);
+                } else if (eTotalSalary >= 300000) {
+                    console.log("Tax to be deducted is " + eTax3);
+                } else {
+                    console.log("Tax to be deducted is NILL");
+                } 
+            }
+            // if (eGender != "male || female") {
+            //     console.log("Invalid data. Provide proper Gender data");
+            // }
+        </script>
+    </body>
+</html>

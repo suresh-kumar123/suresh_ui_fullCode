@@ -1,0 +1,31 @@
+image ang anchor tags
+ 
+<img src="path of the imge" alt="" >----its a self closing tag
+
+src sttribute is maniditory
+ width and height dimensions also will give for any image
+
+path can be given in two ways
+path can be internal or external path
+1. absolute path----complete path from the drive
+2.relative path-----relative to the html page
+
+ex:src="../images/nature1.jpg"
+
+documenting / code comment
+
+<!--
+    -----
+    -----
+    -----
+..>
+
+shortcut for code comment is cntl+/(forward slash)
+
+anchor tag
+
+<a href="path of the externa llink">
+    link name like amazon
+    google
+    gmail
+</a>

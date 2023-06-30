@@ -1,0 +1,61 @@
+for 
+while 
+do while 
+
+for in 
+for each
+for of
+
+-------
+
+var result = 0;
+n = prompt("Enter value for n"); // 345
+n.length  totalDig = = n.length = 3
+
+rem = n % 10 -> 345 % 10 - > 5
+n = n / 10 - > 345 / 10 - > 34.5 -> 34
+result = result + (rem * rem * rem)
+(or)
+result = result + (rem ** totalDig)
+-------------------
+
+rem = n % 10 - > 34 % 10  -> 4 
+n = n / 10 - > 34 / 10 - > 3.4 -> 3 
+result = result + (rem ** totalDig)
+-------
+
+rem = n % 10 - > 3 % 10- > 3
+n = n / 10 - > 0.3 -> 0 
+result = result + (rem ** totalDig)
+
+
+------------------------------------
+
+var n = 345
+3 + 4 + 5 -> 12 -> 1 + 2 -> 3
+
+------------------------------------------
+
+
+
+Syntax:
+
+    switch(variablename ) {
+        case 'value1:
+            ..
+            ..
+            break;
+        case 'value2:
+            ... 
+            break
+        case 'value3'
+            ..
+            break;
+        default:
+            ...
+            ....
+            ...
+    }
+
+
+

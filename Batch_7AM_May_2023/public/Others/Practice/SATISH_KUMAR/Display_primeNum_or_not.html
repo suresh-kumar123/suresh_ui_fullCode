@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        To display whether a given number is prime or not...
+    </h2>
+
+    <script>
+        var n = prompt("Enter the value of n: ");
+        n=parseInt(n);
+        /*console.log("value of n is: "+n);*/
+        var count=0;
+        for(var i=1;i<=n;i++){
+            if(n % i == 0)
+            count++;  
+        }
+        if(count == 2){
+            console.log(n + " is a prime number")
+        }
+        else {
+            console.log(n + " is not a prime number")
+        }
+    </script>
+</body>
+</html>

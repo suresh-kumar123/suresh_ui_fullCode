@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Palindrome </title>
+    </head>
+    <body>
+        <script>
+            /*
+                // Checking Whether Given Number is a Palindrome or Not.
+
+                var num = parseInt(prompt("Enter a Number."));
+                var rem, revNumber = 0 ;
+                var numCopy = num;
+                while (num > 0){
+                    rem = num % 10;
+                    revNumber = revNumber * 10 + rem;
+                    num = Math.floor(num / 10);
+                }
+                if (revNumber == numCopy){
+                    console.log(numCopy + " is a Palindrome.");
+                } else {
+                    console.log(numCopy + " is not a Palindrome.");
+                }
+            */
+
+            /*
+
+                // Displaying Palindrome Numbers Between 1 to 100.
+                
+                function palindromeOrNot(num){
+                    var rem, revNumber = 0 ;
+                    var numCopy = num;
+                    while (num > 0){
+                        rem = num % 10;
+                        revNumber = revNumber * 10 + rem;
+                        num = Math.floor(num / 10);
+                    }
+                    if (revNumber == numCopy){
+                        return (numCopy + " is a Palindrome.");
+                    } else {
+                        return (numCopy + " is not a Palindrome.");
+                    }
+                }
+
+                for (var num = 1 ; num <= 100; num++){
+                    console.log(palindromeOrNot(num));
+                }
+
+            */
+
+            
+            // Sum of all Palindrome Numbers between 500 to 20.
+
+            function palindromeOrNot(num){
+                var rem, revNumber = 0 ;
+                var numCopy = num;
+                while (num > 0){
+                    rem = num % 10;
+                    revNumber = revNumber * 10 + rem;
+                    num = Math.floor(num / 10);
+                }
+                if (revNumber == numCopy){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            var sumOfPalindromeNumbers = 0;
+            for (var i = 500; i >= 100; i--){
+                if (palindromeOrNot(i)){
+                    sumOfPalindromeNumbers += i;
+                }
+            }
+
+            console.log("Sum of Palindrome numbers between 500 to 100 is " +sumOfPalindromeNumbers);
+
+        </script>
+    </body>
+</html>

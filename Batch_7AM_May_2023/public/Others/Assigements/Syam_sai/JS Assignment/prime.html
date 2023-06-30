@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>prime numbers</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("enter n value: ");
+            n = parseInt(n);
+            var result;
+            var j = 0;
+
+             for (var i = 1; i <= n; i++){
+                reuslt = n % i;
+                if(result == 0){
+                    j++;
+                }
+             }
+             
+             if(j == 2){
+                console.log("is a prime number.");
+             }else{
+                console.log("not a prime number");
+             }
+             console.log(j);
+        </script>
+    </body>
+</html>

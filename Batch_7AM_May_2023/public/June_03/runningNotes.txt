@@ -1,0 +1,2 @@
+Increase performace of the webpage
+    Image Spriting

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zindex_and_opacity</title>
+</head>
+<style>
+    .block{
+        border: 1px solid;
+        width:110px;
+        height:100px;
+        cursor: pointer;
+    }
+    .block1{
+        background-color: aqua;
+        display: inline-block;
+    }
+    .block2{
+        background-color:brown;
+        display: inline-block;
+    }
+    .block3{
+        background-color: blue;
+        display: inline-block;
+    }
+    .block4{
+        background-color: aquamarine;
+        display: inline-block;
+    }
+    .block5{
+        background-color: black;
+        display: inline-block;
+    }
+    td:hover{
+        background-color: aqua;
+        cursor:pointer;
+    }
+    .block2a{
+        position:absolute;
+        left:150px;
+        top:800px;
+        background-color: blueviolet;
+        z-index:7;
+    }
+    .block5a{
+        position: absolute;
+        left:190px;
+        top:850px;
+        background-color: black;
+        z-index: 9;
+        opacity: 0.2;
+    }
+</style>
+<body>
+    <div>
+        <div class="block block1">block1</div>
+        <div class="block block2">block2</div>
+        <div class="block block3">block3</div>
+        <div class="block block4">block4</div>
+        <div class="block block5">block5</div>
+    </div><br><br><br>
+    <div>
+        <table border="1px solid"cellpadding="10px" cellspacing="10px">
+                <thead>
+                    <tr>
+                        <th>s.no</th>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>gender</th>
+                        <th>location</th>
+                        <th>pLocation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>raj</td>
+                        <td>23</td>
+                        <td>male</td>
+                        <td rowspan="2">hyd</td>
+                        <td>pune</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>raj</td>
+                        <td>23</td>
+                        <td>male</td>
+                        <td>pune</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>raj</td>
+                        <td>23</td>
+                        <td>male</td>
+                        <td>hyd</td>
+                        <td>pune</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>raj</td>
+                        <td>23</td>
+                        <td>male</td>
+                        <td colspan="2">hyd</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>raj</td>
+                        <td>23</td>
+                        <td>male</td>
+                        <td>hyd</td>
+                        <td>pune</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">5</td>
+                    </tr>
+                </tfoot>
+        </table><br><br><br><br><br>
+        <div>
+            <div class="block block1a">block1</div>
+            <div class="block block2a">block2</div>
+            <div class="block block3a">block3</div>
+            <div class="block block4a">block4</div>
+            <div class="block block5a">block5</div> 
+        </div>
+    </div>
+</body>
+</html>

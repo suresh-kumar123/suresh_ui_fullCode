@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Epmloyee Salary</h3>
+    <strong>Open up console to see whats actually going on.</strong>
+</body>
+</html>
+<script>
+    let name = prompt("Enter name:");
+    let age = prompt("Enter age:");
+    let gender = prompt("Enter gender:");
+    let basicSalary = parseInt(prompt("Enter basic salary:"));
+    let pf = basicSalary / 1200;
+    let hra = basicSalary * 0.24;
+    let totalSalary = basicSalary + pf + hra;
+    let roundedSalary = Math.round(totalSalary) * 12;
+
+    if (gender === "male") {
+        if (roundedSalary >= 500000) {
+            let tax = Math.round(roundedSalary * 0.15);
+            let actualSalary = roundedSalary - tax;
+            console.log(`tax: ${tax}, Salary after deduction: ${actualSalary}`);
+        } else if (roundedSalary >= 300000) {
+            let tax = Math.round(roundedSalary * 0.1);
+            let actualSalary = roundedSalary - tax;
+            console.log(`tax: ${tax}, Salary after deduction: ${actualSalary}`);
+        } else if (roundedSalary >= 100000) {
+            let tax = Math.round(roundedSalary * 0.05);
+            let actualSalary = roundedSalary - tax;
+            console.log(`tax: ${tax}, Salary after deduction: ${actualSalary}`);
+        } else {
+            console.log("No tax for you!");
+        }
+    } else {
+        if (roundedSalary >= 500000) {
+            let tax = Math.round(roundedSalary * 0.1);
+            let actualSalary = roundedSalary - tax;
+            console.log(`tax: ${tax}, Salary after deduction: ${actualSalary}`);
+        } else if (roundedSalary >= 300000) {
+            let tax = Math.round(roundedSalary * 0.05);
+            let actualSalary = roundedSalary - tax;
+            console.log(`tax: ${tax}, Salary after deduction: ${actualSalary}`);
+        } else {
+            console.log("You are tax free!");
+        }
+    }
+
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional_Control_Structure</title>
+  </head>
+  <body>
+    <script>
+      var msg;
+      var ename = prompt("enter the employe name")
+      var age = prompt("enter the age")
+      var gendar = prompt("enter the gendar")
+      var elocation = prompt("enter the location")
+      var dipartment = prompt("enter the dipartment")
+      var basicsal = prompt("enter the basicsal")
+      basicsal = parseInt(basicsal)
+
+
+      var pf = (basicsal * 12) / 100
+      var hra = (basicsal * 24) / 100
+
+
+      var totalsalary = pf + hra + basicsal
+      avg = totalsalary / 5
+
+
+      console.log('the total salary is ' + totalsalary)
+      console.log("enter the emplyoe name is" + ename)
+      console.log("enter the age is" + age)
+      console.log("enter the gendar" + gendar)
+      console.log("enter the location" + elocation)
+      console.log("enter the dipartment is  " + dipartment)
+      console.log("avarage is " + avg)
+      msg= "The Total salary is Rs:" + totalsalary + "\n"+"Employee Name: " + ename+"\n"+
+      "enter the age is" + age+ "\n"+"enter the gendar" + gendar+ "\n"+"enter the location" + elocation
+      + "\n"+"enter the dipartment is  " + dipartment+ "\n"+"avarage is " + avg
+      alert(msg);
+
+
+      if ("gendar == male") {
+        if (totalsalary >= 500000) {
+            console.log("tax percent is 15%");
+        } else if (totalsalary >= 300000) {
+            console.log("tax percent is 10%");
+        } else if (totalsalary >= 100000) {
+            console.log("tax percent is 5%");
+        } else {
+            console.log("other wise percent is 0%")
+        }
+
+      } else {
+        if (totalSalary > -500000) {
+             console.log("Female Tax pecentageshould be of 10% ");
+        } 
+        else if (totalSalary >= 300000)
+             console.log("Female Tax pecentageshould be of 5% ");
+        else {
+            console.log("FemaleTax pecentage should be of 0% ");
+        }
+      }
+    </script>
+  </body>
+</html>

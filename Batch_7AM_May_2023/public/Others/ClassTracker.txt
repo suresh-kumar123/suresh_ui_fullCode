@@ -1,0 +1,69 @@
+Class 2: May 18 - HTML and HTM, Example for HTML basics for “News content”, line break tag <br>, &nbsp; for single space, <hr> for a line across the page. Heading tags. breif touch on the specified style for a word <style>. Underlined word <u>. Bold word <b>. Italic word <I>.  Paragraph <p>.  HTML Attributes. 
+
+Class 3: May 19 - Style and name attributes. GitHub
+
+Class 4: May 22 - RBG colour, ascii colours, GitHub 
+
+Class 5: May 23 - Style attribute, Class style, ID style
+
+Class 6: May 24 - debugging tool
+
+Class 7: May 25 - Img Src, comment sections, Alt attribute, anchor tag
+
+Class 8: May 26 - assignment submission, block level and in line elements, 
+
+Class 9: May 29 - Block Level elements, In-line elements, span tags, overflow auto
+
+Class 10: May 31 - Padding and margin properties, CSS box model, width calculation, pseudo-classes and elements. 
+
+Class 11: June 1 - Pseudo-elements, 
+
+Class 12: June 2 - intro on servers, Node JS, setting up node server. 
+
+Class 13: June 3 - Image spiriting, Snipping tool. 
+
+Class 14: June 5 - Assignment 3, Ul, Ol, li. Css display property, menu bar, 
+
+Class 15: June 6 - CSS display properties, table tags. 
+
+Class 16: June 7- Css position properties, 
+
+Class 17: June 10 - Z index, opacity, assignment answer
+ 
+Class 18: June 12 - Input elements. Form tag with get communication, 
+
+Class 19: June 13 - Form tag with post communication, Marquee and Iframes, Intro on Javascript
+
+Class 20: June 15 - Javascript data types, 
+
+Class 21: June 16 - Console.log and var types. 
+
+Class 22: June 19 - Prompt
+
+Class 23: June 20 - variable hoisting, Control structures, 
+
+Class 24: June 21 - Control Structures (Conditioned CS),(Looping CS), 
+
+Class 25: June 22 - Looping CS,
+			Assignment questions: 
+				write a program to display numbers between 1 to 100. 
+				Write a program to display numbers between 201 to 106. 
+				Write a program to find the sum of values between 1 to 100
+				Write a program to list out all the even numbers between 1 to 100
+				Write a program to find the sum of odd numbers between 99 to 29. 
+
+
+				Write a program to list out all the prime numbers between 1 to 100. 
+				Write a program to check whether a number is prime or not, 
+				Write a program to read a number and find the reverse of a given number. 
+				Write a program to find the sum of individual digits of a given number. 
+				Write a program to find the lucky number of a given number. 
+				Write a program to check whether a given number is palindrome number or not. 
+				Write a program to display all the palindrome numbers between 1 to 1000. 
+				Write a program to find the sum of all palindrome numbers between 500 to 20. 
+
+Class 26: June 23 - Loopiing CS
+
+Class 27: June 26 - Switch cases, Do while,  write a program to list out lucky numbers between 1000 to 100. 
+			Write a program to find Armstrong numbers between 1 to 100.
+			

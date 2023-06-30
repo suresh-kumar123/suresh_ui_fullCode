@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Working with employee details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empName = prompt("Enter emp name");
+            var age = prompt("enter emp age");
+            var gender = prompt("enter emp gender");
+            var basicSal = prompt("Enter basic sal");
+            basicSal = parseInt(basicSal);
+
+            var pf = (basicSal * 12 ) / 100;
+            var hra = (basicSal * 24 ) / 100;
+
+            var totalSal = pf + hra + basicSal;
+            console.log("The total sal is " + totalSal);
+        </script>
+    </body>
+</html>

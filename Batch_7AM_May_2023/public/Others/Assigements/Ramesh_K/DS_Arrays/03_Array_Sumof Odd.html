@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var result = 0;
+      var data = [];
+      for (i = 0; i < 5; i++) {
+        data[i] = prompt("Enter the value for position " + i);
+        data[i] = parseInt(data[i]);
+
+        // Sum of all array elements which are Odd
+        if (data[i] % 2 != 0) {
+          console.log(data[i] + " Is a Odd Number ");
+          result = result + data[i];
+        }
+      }
+      console.log(" The Sum of all array elements is : " + result);
+    </script>
+  </body>
+</html>

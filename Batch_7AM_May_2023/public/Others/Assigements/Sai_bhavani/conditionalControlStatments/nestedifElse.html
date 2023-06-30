@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if</title>
+</head>
+<body>
+    <script>
+        var Name = prompt('Enter emp Name');
+        var Age = prompt('Enter emp age');
+        var Gender = prompt('Enter emp Gender');
+        var EmpLocation = prompt(' Enter emp location');
+        var Department = prompt('Enter emp department');
+        var BasicSal = parseInt(prompt('Enter emp Basic Salary'));
+        console.log('Emp basic salary = ' + BasicSal)
+        var PF = parseInt(BasicSal * 12 / 100);
+        console.log('Emp pf = ' + PF);
+
+        var HRA = parseInt(BasicSal * 24 / 100);
+        console.log('Emp HRA =' + HRA);
+
+        var totalSal = BasicSal + PF + HRA;
+        console.log('Emp total salary = ' + totalSal);
+
+        if (Gender == 'Male' || Gender == 'm') {
+            if (totalSal >= 500000){
+                console.log('Tax percentage = ' + totalSal * 15 / 100);                
+            }
+            else if (totalSal >= 300000 && totalSal < 500000) {
+                console.log('Tax percentage = ' + totalSal * 10 / 100);
+            }
+            else if (totalSal >= 100000 && totalSal < 300000) {
+                console.log('Tax percentage = ' + totalSal * 5 / 100);
+            }
+            else {
+                console.log('Total sal is less than 100000, hence no tax')
+            }
+        } else {
+            if (totalSal >= 500000) {
+                console.log('Tax percentage = ' + totalSal * 10 / 100);
+            }
+            else if (totalSal >= 300000 && totalSal < 500000) {
+                console.log('Tax percentage = ' + totalSal * 5 / 100);
+            } else{
+                console.log('Total sal is less than 100000, hence no tax')
+            }
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

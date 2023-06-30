@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sname=prompt("enter ur name");
+        var gender=prompt("enter ur gender");
+        var basicsal=parseInt(prompt("enter ur basic salary"));
+        if (gender == "male") {
+             if (basicsal >= 500000) {
+                var taxpercent="15%";
+                console.log("the tax perecnatge is" +taxpercent);
+            }
+            if (basicsal >= 300000) {
+                taxpercent="10%";
+                console.log("the tax perecnatge is" +taxpercent);
+
+            }
+            if (basicsal>=100000) {
+                taxpercent="5%";
+                console.log("the tax perecnatge is" +taxpercent);
+            } else {
+                taxpercent="0%";
+                console.log("the tax perecnatge is" +taxpercent);
+
+
+            }
+            
+        }
+        if(gender=="female") {
+            if(basicsal>=500000) {
+                taxpercent="10%";
+                console.log("the tax perecnatge is" +taxpercent);
+            }
+            if (basicsal>=300000) {
+                taxpercent="5%";
+                console.log("the tax perecnatge is" +taxpercent);
+            } else {
+                taxpercent="0%";
+                console.log("the tax perecnatge is" +taxpercent);
+            
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

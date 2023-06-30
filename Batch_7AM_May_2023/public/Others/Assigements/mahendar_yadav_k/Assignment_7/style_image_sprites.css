@@ -1,0 +1,43 @@
+.imgblock {
+    width: 169px;
+    height: 187px;
+    border: 1px solid;
+    background-image: url(images/image_spritting1.png);
+}
+h3{
+    height: 50px;
+    width: 80%;
+    border: 3px solid ;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 10px;
+    background-color: beige;
+}
+.details{
+    border: 1px solid;
+    margin-left: 50px;
+    height: 260px;
+    width: 170px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: beige;
+}
+img{
+    height: 188px;
+    width: 170px;
+    border-radius: 5px;
+}
+.emp1{
+    background-position: -24px -8px;
+    border-radius: 5px;
+}
+.emp2{
+    background-position: -373px 0px;
+    border-radius: 5px;
+}
+.emp3{
+    background-position: -82px -337px;
+    border-radius: 5px;
+}
+

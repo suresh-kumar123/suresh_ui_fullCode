@@ -1,0 +1,11 @@
+DOM Structure
+    DOM - Document object model 
+
+
+Debugging Tool 
+
+    RCUD on html or css props 
+
+
+
+CSS Priority Order

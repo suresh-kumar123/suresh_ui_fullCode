@@ -1,0 +1,74 @@
+float: left/right 
+
+    clear: left/right/both;
+
+HTML Tables:
+    Anytime we want to render any data in the form of row and colum wise
+
+    We go for table tags 
+
+    table 
+    tbody
+    thead
+    tfoot
+    tr 
+    th 
+    td 
+
+    Basic structure of a table container
+
+        table 
+            thead
+                tr 
+                    th 
+                    th 
+                    th
+            tbody
+                tr 
+                    td 
+                    td 
+                    td 
+
+            tfoot
+                tr  
+                    td 
+                    td 
+                    td
+
+----------------------
+
+div 
+    p 
+    h3 
+    img 
+
+span 
+
+    ----------
+
+table 
+    tbody
+        tr 
+            td 
+                ... 
+
+0-----------------------------
+
+CSS Positions:
+
+    1. how the margin an padding props are working 
+
+        top 
+        left 
+        right 
+        bottom 
+
+            make dom element to be non static poisiton
+
+
+            ------------\
+
+            Position: static/relative/absolute/sticky / fixed 
+
+
+            Static Position -> am not going o move from my default position  -> am not going to consider top, left right or bottom properties

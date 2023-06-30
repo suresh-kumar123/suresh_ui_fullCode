@@ -1,0 +1,45 @@
+css margin and padding property
+when you give margin:auto;--the div/ will comes in center
+
+margin:10px;---top right bottom left
+margin:20px 24px;---top bottom left right
+margin:10px 34px 56px:---top rigth left botton
+margin:auto;---div comens in center
+
+
+same order for padding also clock wise direction
+ 
+padding:10px;---top right bottom left
+padding:20px 24px;---top bottom left right
+padding:10px 34px 56px:---top rigth left botton
+
+--------------------------------------------------------------------
+pseudo classes
+
+Syntax: 
+        selector:pseudoclassname {
+            ... 
+            ...
+        }
+
+        #abc:hover {
+
+        }
+
+        .pqr:focus {
+
+        }
+        div:first-child {
+            
+        }
+
+:hover
+:visited
+:active
+:link
+:focus
+:empty
+:first-child
+:last-child
+:nth-child(4)
+p:only_child

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindromes Number Addition</title>
+    </head>
+    <body>
+        <script>
+            var x = 20;
+            var result = 0;
+            while(x <= 500){
+                var y = x;
+                var rem = 0;
+                var reverse1 = 0;
+                while(y > 0){
+                    rem = y % 10;
+                    reverse1 = reverse1 * 10 + rem;
+                    y = y / 10;
+                    y = parseInt(y);
+                }
+                if(reverse1 == x){
+                    result = result + x;                
+                }x++;          
+            }console.log(result);
+            
+        </script>
+    </body>
+</html>

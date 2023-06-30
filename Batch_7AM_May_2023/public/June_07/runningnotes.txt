@@ -1,0 +1,6 @@
+ by default every static positioned elements gets rendered within the xy axis 
+
+ by default every non static positioned elements gets movedd from defulat xy axis to z axis
+
+
+ Sti

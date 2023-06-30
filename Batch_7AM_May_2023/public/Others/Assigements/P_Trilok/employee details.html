@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            employee details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname,empage,empgen,empdep,basicSal,pf,hra,totalSal,tax;
+            empname = prompt("enter Employee Name");
+            console.log("the Employee Name is " + empname);
+            empage = prompt("enter Employee Age");
+            console.log("the Employee Age is " + empage);
+            empgen = prompt("enter Employee Gen");
+            console.log("the Employee Gen is " + empgen);
+            empdep = prompt("enter Employee Dep");
+            console.log("the Employee Dep is " + empdep);
+            basicSal = prompt("enter basicSal");
+            
+            basicSal = parseInt(basicSal);
+            var pf = (basicSal * 12) / 100;
+            var hra = (basicSal * 24) / 100;
+            var totalSal = pf + hra + basicSal;
+            console.log("the totalSal is " + totalSal);
+            if(empgen = "male"){
+                if(totalSal >= 500000){
+                    tax=(15/100)*totalSal;
+                    console.log("tax is 15 percent = " + tax);
+                }
+                else if(totalSal >= 300000){
+                    tax=(10/100)*totalSal;
+                    console.log("tax is 10 percent = " + tax);
+                }
+                else if(totalSal >=100000){
+                    tax=(5/100)*totalSal;
+                    console.log("tax is 5 percent = " + tax);
+                }
+            }
+            
+            else if(empgen = "female"){
+                if(totalSal >= 500000){
+                    tax=(10/100)*totalSal;
+                    console.log("tax is 10 percent = " + tax);
+                }
+                else if(totalSal >= 300000){
+                    tax=(5/100)*totalSal;
+                    console.log("tax is 5 percent = " + tax);
+                }
+            }
+            
+        </script>
+    </body>
+</html>

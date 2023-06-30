@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        To find the lucky number for the given number...
+    </h2>
+
+    <script>
+        var n = prompt("Enter the value of n: ");
+        console.log("Value of n is: " + n);
+        var rem;
+        var rem1;
+        var sum=0;
+        var sum1 = 0;
+        while(n>0){
+            rem = n%10;
+            sum=sum+rem;
+            n=n/10;
+            n=parseInt(n);
+            rem1 = sum%10;
+            sum1 = sum/10;
+            sum1=parseInt(sum1);
+            sum1 = sum1 + rem1;
+        }
+        console.log("The sum of given number n is: " + sum1);
+    </script>
+</body>
+</html>

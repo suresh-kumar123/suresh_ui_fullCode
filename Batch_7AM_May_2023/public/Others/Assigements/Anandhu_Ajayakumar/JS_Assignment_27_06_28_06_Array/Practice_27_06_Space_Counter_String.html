@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Counter String</title>
+    </head>
+    <body>
+        <script>
+            var count = 0;
+            var string = prompt("Enter the message: ");
+            console.log(string);
+            for(var i = 0; i < string.length; i++){
+                if(string[i].includes(" ")){
+                    count++
+                }                
+            }console.log("The number of spaces in the string is: " +count);                    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+var a = 90;
+
+var a = "99.9";
+parseInt()
+
+
+parseFloat()
+
+var a = 90;
+a.toString()
+----------
+
+Auto/dynamic Typecasting 
+

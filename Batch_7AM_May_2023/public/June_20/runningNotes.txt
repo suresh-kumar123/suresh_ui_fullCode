@@ -1,0 +1,124 @@
+Variable Hoisting :
+
+
+C language:
+
+    ...
+    .
+    .
+    .
+    .
+
+    void main() {
+        int c;
+        ...
+        int a, b
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+         
+    }
+
+    ..
+
+    .
+    .
+    .
+    .
+-----
+js
+    var a = 90;
+    .. . . . 
+    .
+    .
+    .
+    .
+    var b;
+    .
+    .
+    ..
+    var z = 100;
+
+----
+
+js
+    var a, b, z;
+
+    a = 90;
+    .. . . . 
+    .
+    .
+    .
+    .
+    
+    .
+    .
+    ..
+    z = 100;
+--------------------------------------
+
+Control Structures:
+    Conditional CS 
+        if 
+            Syntax;
+
+                if (gender != 'male') {
+
+                }
+
+                if (<single / multiple conditions>) {
+                    ...
+                    ...
+                    ...
+                }
+
+            eg:
+
+                if (class  == 'MCA' || class = 'Btech') {
+
+                }
+                if (avg >= 40 && avg <= 60) {
+
+                }
+        if else 
+
+            Syntax:
+
+                if (condition) {
+                    ...
+                } else {
+                    ...
+                }
+        else if 
+        nested if 
+        nested if else 
+
+    Looping CS 
+        for 
+        while 
+        do while 
+        for each 
+        for in 
+        for of 
+
+
+    Case CS 
+        Switch case 
+-------------------------------
+Arthematic Operators:
+    +, -, % , * etc 
+
+Comparision opera :
+
+    ==, === , >, <. <=, >= 
+
+Conditional:
+    ? :
+
+Bitwise operators: 
+ ||, &&, != 
+

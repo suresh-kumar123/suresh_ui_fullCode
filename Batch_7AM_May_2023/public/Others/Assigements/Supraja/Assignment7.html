@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control structures</title>
+</head>
+<body>
+    <script>
+        var ename = prompt ( "enter the emloyee name");
+        var eage = prompt ( " entrer the age");
+        var egender = prompt ( " enter the gender");
+        var emploc = prompt ( " enter location");
+        var edept = prompt ( " enter department");
+        var bs = prompt ( " enter basic salary");
+          bs = parseInt (bs);
+          var pf = (bs * 12)/100;
+          var hra = ( bs * 24)/100;
+
+          var ts = bs + pf + hra;
+          avg = ts / 5;
+
+          console.log('the totalsalary is' +ts);
+          console.log ( 'the employee name is' +ename);
+          console.log ( 'the employee age is' +eage);
+          console.log ( 'the employee gender is '+egender);
+          console.log ( 'the employee location is' +emploc);
+          console.log (' the employee deartment is' +edept);
+          console.log (' the average is' +avg);
+
+          if ("gender = male") {
+            if ( ts >= 500000) {
+                console.log ( "tax is 15 percent");
+            } else if ( ts >= 300000){
+                console.log ( " tax is 10 percent") ;
+
+            }else if (ts >=100000) {
+                console.log ( "tax is 5 ercent");
+
+            }else {
+                console.log (" 0 percent ") ;
+            }
+
+            }
+          
+          else  ( "gender = female") 
+            if ( ts >= 500000){
+                console.log ( " tax is 15 percent");
+
+            } else if ( ts >= 300000){
+                console.log ( " tax is 10 percent");
+            } else {
+                console.log ( "0 percent");
+            }
+          
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+Padding And Margin 
+    margin: 10px; 
+
+    margin: 5px 10px; top and bottom  left and right
+
+    margin: 5px 10px 6px 90px ; top right bottom left
+
+    margin-left: 30px 
+
+    margin-bottom: 20px
+
+    -----------------
+
+    CSS Box model - > calculating the actual dimentions of the DOM element within the page...
+
+        dimentions - include actual width/height + border space + margin + padding been occupied  
+
+    ------------------
+
+    .container {
+        font-size: 30px;
+        background-color: green;
+        width: 112px;
+        height: 115px;
+        border: 11px solid;
+        margin: 10px 6px 7px 11px;
+        padding: 11px 23px;
+    }
+
+    <div class="container"> CONTENT </div>
+
+    WIDTH -> 144 148 163 155 186 164 171 183 159 193  163 146
+
+    11 + 6 + 11 + 11 + 23 + 23 + 112 -> 197
+--------------------------------------
+
+Pseudo Classes and PseudoElements:
+    PseudoClasses -> 
+
+    :hover 
+    :blur 
+    :link 
+    :active 
+    :enable
+    :first-child
+    :last-child
+    :focus 
+    ... 
+    ,...  
+
+    Syntax: 
+        selector:pseudoclassname {
+            ... 
+            ...
+        }
+
+        #abc:hover {
+
+        }
+
+        .pqr:focus {
+
+        }
+        div:first-child {
+            
+        }

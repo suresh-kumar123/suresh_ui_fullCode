@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Number Assignment </title>
+    </head>
+    <body>
+        <script>
+
+            // Checking whether given number is prime number or not
+
+            var number = prompt("Enter Number to check whether it is a prime number or not?");
+            number = parseInt(number);
+            var count = 0
+            /*
+                for (var i = 1; i <= number; i++){
+                    if (number %  i == 0){
+                        count += 1;
+                    }
+                }
+                
+                if (count == 2){
+                    console.log(number + " is a Prime Number");
+                } else {
+                    console.log(number + " is not a prime Number");
+                }
+            */
+
+            // Optimising the code
+
+            for (var i = 2; i < number; i++){
+                if (number % i == 0){
+                    count = count + 1;
+                }
+            }
+            if (count == 0){
+                console.log(number + " is a Prime Number");
+            } else {
+                console.log(number + " is not a prime Number");
+            }
+            
+        </script>
+    </body>
+</html>

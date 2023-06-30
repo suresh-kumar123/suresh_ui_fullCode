@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>employee_details by usingjavascript</title>
+    <link href="Untitled.icon.png" rel="shortcut icon">
+</head>
+<body>
+    <script>
+        window.alert("employee_details by usingjavascript")
+    </script>
+    <script>
+        var name = prompt("enter user name");
+        var email = prompt("enter user email")
+        var age = prompt("enter user age");
+        var gender = prompt("enter user gender");
+        var female = 'female';
+        var male = 'male';
+       
+        var place = prompt("enter user  place");
+        
+        var department = prompt("enter user department");
+        
+        var basicsal = prompt("enter your salary");
+        basicsal = parseInt(basicsal);
+
+        var pf = (basicsal*12)/100;
+        var hra = (basicsal*24)/100;
+
+        var totalsalary = basicsal + pf + hra;
+
+        var tax1 = (totalsalary*15)/100;
+        var tax2 = (totalsalary*10)/100;
+        var tax3 = (totalsalary*5)/100;
+
+
+        console.log("enter user name = " + name);
+        console.log("entet user age = " + age);
+        console.log("enter user gender = " + gender);
+        console.log("enter user department = " + department);
+        console.log(" enter user basic salary = " + basicsal);
+        console.log("pf is = " + pf);
+        console.log("hra is = " + hra);
+        console.log("total salary is = " + totalsalary);
+
+       
+        if(gender == 'male'){
+            if(totalsalary >= 500000){
+                console.log("tax is 15 percent = " + tax1);
+            }else if(totalsalary >= 300000){
+                console.log("tax is 10 percent = " + tax2);
+            }else if(totalsalary >= 100000){
+                console.log("tax is 5 percent = " + tax3);
+            }else{
+                console.log("no tax");
+            }
+
+        }
+        else {
+            if(totalsalary >= 500000){
+                console.log("tax is 10 percent = " + tax2);
+            }
+            else if(totalsalary >= 300000){
+                console.log("tax is 5 percent = " + tax3);
+            }
+            else{
+                console.log("no tax");
+            }
+
+        }
+        
+        
+        if(gender == 'male'){
+            if(totalsalary >= 700000){
+                console.log("tax is 15 percent = " + tax1);
+            }else if(totalsalary >= 800000){
+                console.log("tax is 10 percent = " + tax2);
+            }else if(totalsalary >= 1000000){
+                console.log("tax is 5 percent = " + tax3);
+            }else{
+                console.log("no tax");
+            }
+
+        }
+        else {
+            if(totalsalary >= 5000000){
+                console.log("tax is 10 percent = " + tax2);
+            }
+            else if(totalsalary >= 30000000){
+                console.log("tax is 5 percent = " + tax3);
+            }
+            else{
+                console.log("no tax");
+            }
+        }
+
+</script>
+    
+</body>
+</html>

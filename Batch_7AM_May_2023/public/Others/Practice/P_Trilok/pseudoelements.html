@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            pseudoelements
+        </title>
+        <style>
+            body {
+                background-color: bisque;
+            }
+            h2 {
+                border: 5px dotted;
+                text-align: center;
+                text-decoration: underline;
+                padding: 10px;
+                margin: 10px;
+                border-color: royalblue;
+            }
+            p::first-letter {
+                font-size: 30px;
+                color: rgb(242, 20, 20);
+                font-weight: bold;
+            }
+            p::first-line {
+                background-color: aquamarine;
+            }
+            p::selection {
+                background-color: aquamarine;
+                color: blueviolet;
+            }
+            p::after {
+                content : 'End of content';
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            .India {
+                text-align:center;
+                font-size: 40px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="India">
+            <span style="color: orangered;">I</span>
+            <span style="color: rgba(86, 10, 236, 0.934);">N</span>
+            <span style="color: greenyellow;">D</span>
+            <span style="color: skyblue;">I</span>
+            <span style="color: rgb(206, 43, 43);">A</span>
+        </div>
+        <h2>
+            Todays News content
+        </h2>
+        <h3>
+            News Content1 :
+        </h3>
+        <p>
+            Iam Trilok from Kurnool iam doing MCA in tirupati from 2021 to 2023. 
+            Present iam doing UI Fullstack Developer Course .This is inform you that i want 
+            to become a front-end developer. Iam Trilok from Kurnool iam doing MCA in tirupati from 2021 to 2023. 
+            Present iam doing UI Fullstack Developer Course .This is inform you that i want 
+            to become a front-end developer. 
+        </p>
+        <h3>
+            News Content2 :
+        </h3>
+        <p>
+            Union Railway Minister Ashwini Vaishnaw said the root cause of the Balasore train accident has been identified, adding that the target is to finish 
+            the restoration worl by wednesday morning so that trains can start running on this track. He said the accident happend due to 'change in electronic interlocking'.
+        </p>
+        <h3>
+            News Contetn3 :
+        </h3>
+        <p>
+            According to the IMD bulletin, isolated places in the districts of North Gujarat region, including Banaskantha, Sabarkantha, Ahmedabad, and Anand, 
+            may experience light thunderstorms accompanied by lightning, surface winds of 30-40 kilometres per hour (with gusts), and light to moderate rainfall on June 3.
+        </p>
+        
+        
+    </body>
+</html>

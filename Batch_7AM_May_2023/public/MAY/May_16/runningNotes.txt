@@ -1,0 +1,29 @@
+Basic Structure of a HTML Page :
+
+    TAG -
+        <abc> .... ... ...  </abc> =\- HTML element
+
+    html 
+    body 
+    title 
+    div 
+    span
+    header
+    section
+    p 
+    ul 
+    li 
+    ... 
+    ... 
+--------------------------------
+
+<html>
+    <head>
+        <title>......</title>
+    </head>
+
+    <body>
+        ........
+    </body>
+
+</html>

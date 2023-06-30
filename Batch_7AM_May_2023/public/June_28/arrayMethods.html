@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Array methods
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [34, 55, 67, 77, 88, 100, 21, 302];
+
+            console.log(data);
+
+            /*console.log(data.length);
+
+            data.push(101, 203); // inserting from right side
+            console.log(data);
+
+            data.unshift(205, 402); // inserting from left side
+
+            console.log(data); */
+
+            // data.pop(); //delete from right 
+            // console.log(data);
+
+            // data.shift(); // delete from left
+            // console.log(data);
+
+            data.splice(2, 0, 14, 1, 22, 33, 455);  //using we can insert|delete any number of values, at any required position
+            console.log(data);
+
+            var result = data.join();
+
+            
+            console.log(data.join(''));
+
+            // find(), map(), filter(), indexof(), includes() ECMA6
+
+        </script>
+    </body>
+</html>

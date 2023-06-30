@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4, h3 {
+            text-align: center;
+            border: 1px solid;
+            padding: 10px;
+        }
+        .mainContainer {
+           border: 1px solid;
+           height: 500px;
+           clear: both;
+        }
+        .lblock, .rblock {
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            height: 460px;
+            overflow: auto;
+        }
+        .lblock {
+            width: 30%;
+        }
+        .rblock {
+            width: 65%;
+        }
+        .lblock li {
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style-position: inside;
+        }
+        .lblock li:hover {
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+        .studentDetailsBlock > li {
+            height: 200px;
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            list-style: none;
+        }
+        ul, ol {
+            margin: 5px;
+            padding: 5px;
+        }
+        .imgContainer {
+            padding: 10px;
+            width: 200px;
+            float: left;
+        }
+        .detailsContainer {
+            float: left;
+        }
+        img {
+            width: 120px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <div class="mainContainer">
+        <div class="lblock">
+            <ol>
+                <li>Raj</li>
+                <li>
+                    <a href="#details2">Teena</a>
+                </li>
+                <li>Krish</li>
+                <li>Prasad</li>
+                <li>David</li>
+                <li>
+                    <a href="#details6">Lesa</a>
+                </li>
+            </ol>
+        </div>
+        <div class="rblock">
+            <ul class="studentDetailsBlock">
+                <li>
+                    <div class="imgContainer">
+                        <img src="images/26Assignment6_layoutSolutionImages/emp2.PNG" alt="This is an Image of Raj">
+                    </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name: Raj</li>
+                            <li>Age: 20</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Hyd</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="details2">
+                    <div class="imgContainer">
+                        <img src="images/26Assignment6_layoutSolutionImages/emp1.PNG" alt="This is an Image of Teena">
+                    </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name: Teena</li>
+                            <li>Age: 20</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Bangalore</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgContainer">
+                        <img src="images/26Assignment6_layoutSolutionImages/emp4.PNG" alt="This is an Image of Krish">
+                    </div>
+                    <div class="detailsContainer">
+                        <ul>
+                        <li>Name: Krish</li>
+                            <li>Age: 20</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Mumbai</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="details6">
+                    <div class="imgContainer">
+                        <img src="images/26Assignment6_layoutSolutionImages/emp3.PNG" alt="This is an Image of Lesa">
+                    </div>
+                    <div class="detailsContainer">
+                        <ul>
+                            <li>Name: Lesa</li>
+                            <li>Age: 20</li>
+                            <li>Gender: Female</li>
+                            <li>Location: Delhi</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h4>@Copyrights 2023</h4>
+</body>
+</html>

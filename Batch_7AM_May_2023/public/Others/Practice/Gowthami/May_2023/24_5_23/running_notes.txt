@@ -1,0 +1,14 @@
+class 6(24/5/2023)
+
+    DOM structure----DOCCUMENT OBJECT MODEL
+    debugging tool
+    css order priority----1.Inline css
+                          2.ID based css
+                          3.class based css
+                          4.tag based css
+    ASSIGNMENTN 1---play with debugging tool
+
+    in order to override all this css pririties we use ---!IMPOTANT---WE HAVE TO WRITE THIS IMPORTANT CODE
+    
+1 what are the priority order to apply css ??
+ans: inine css, id based css, class based css, tag based css

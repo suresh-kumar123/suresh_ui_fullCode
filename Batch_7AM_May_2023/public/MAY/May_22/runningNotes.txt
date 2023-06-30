@@ -1,0 +1,15 @@
+color - direct color name   -> color: green; border: 1px solid red;
+        RGB - rgb( 20, 33, 45); 0 - 255
+        Hashcode - 
+            ASCII 
+                0 1 
+                    color: # s2 bc d3;
+        
+
+        RGBA 
+        HSL
+----------------------------------- 
+
+GITHUB 
+
+    GIT DESktop 

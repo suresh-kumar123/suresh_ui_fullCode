@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong Number Programs</title>
+    </head>
+    <body>
+        <script>
+            /*
+
+                // Count of no. of digits 
+                var num = prompt("Please Enter a Number");
+                console.log(num.length);
+            */ 
+
+            /* 
+                
+                // Armstrong Number Program
+
+                var num = prompt("Enter a Number to check whether it is a Armstrong Number or not.");
+                var numCopy = parseInt(num);
+                var numLen = num.length;
+                var rem , res = 0 ;
+                while (num > 0){
+                    rem = num % 10;
+                    res += rem ** parseInt(numLen) ;
+                    num = Math.floor(num / 10);
+                }
+                if (res == numCopy){
+                    console.log(numCopy + " is Armstrong Number");
+                }else {
+                    console.log(numCopy + " is not an Armstrong Number");
+                }
+            */ 
+
+
+            // Armstrong Numbers between 1 to 100
+            
+            function armstrongOrNot(num){
+                var numCopy = parseInt(num);
+                var numLen = num.length;
+                var rem , res = 0 ;
+                while (num > 0){
+                    rem = num % 10;
+                    res += rem ** parseInt(numLen) ;
+                    num = Math.floor(num / 10);
+                }
+                if (res == numCopy){
+                    return true;
+                }else {
+                    return false;
+                }
+            } 
+            for (var num = 1; num <= 1000; num++){
+                if (armstrongOrNot(toString(num))){
+                    console.log(num);
+                }
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee details</title>
+  </head>
+  <body>
+    <h1>Employeee details Using Conditional Structures</h1>
+    <script type="text/javascript">
+      var eName = prompt("enter employee name :");
+      var eAge = prompt("enter employee age :");
+      var eGender = prompt("enter employee gender :");
+      var eLoc = prompt("enter employee location :");
+      var eDept = prompt("enter employee department :");
+      var ebasicsal = prompt("enter employee basicsalary :");
+      ebasicsal = parseInt(ebasicsal);
+
+      var pf = (ebasicsal * 12) / 100;
+      var hra = (ebasicsal * 24) / 100;
+      var totalsal = pf + hra + ebasicsal;
+      var tax;
+
+      console.log("The employee name is :" + eName);
+      console.log("The employee age is :" + eAge);
+      console.log("The employee gender is :" + eGender);
+      console.log("The employee location is :" + eLoc);
+      console.log("The employee department is :" + eDept);
+      console.log("The employee salary is :" + ebasicsal);
+      console.log("The employee pf is :" + pf);
+      console.log("The employee hra is :" + hra);
+      console.log("The employee total salary is :" + totalsal);
+
+      if (eGender == "male") {
+        if (totalsal >= 500000) {
+          tax = (totalsal * 15) / 100;
+          console.log("the tax percent is 15% " + "=" + tax);
+        } else if (totalsal >= 00000) {
+          tax = (totalsal * 10) / 100;
+          console.log("the tax percent is 10% " + "=" + tax);
+        } else if (totalsal >= 100000) {
+          tax = (totalsal * 5) / 100;
+          console.log("the tax percent is 5% " + "=" + tax);
+        } else {
+          tax = 0;
+          console.log("Tax to pay :" + tax);
+        }
+      } else if (eGender == "female") {
+        if (totalsal >= 500000) {
+          tax = (totalsal * 10) / 100;
+          console.log("The tax percent is 10% " + "=" + tax);
+        } else if (totalsal >= 300000) {
+          tax = (totalsal * 5) / 100;
+          console.log("The tax percent is 5% " + "=" + tax);
+        } else {
+          tax = 0;
+          console.log("Tax to pay :" + tax);
+        }
+      }
+    </script>
+  </body>
+</html>

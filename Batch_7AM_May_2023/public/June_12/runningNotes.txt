@@ -1,0 +1,41 @@
+Input elements
+    type 
+    checkbox
+    radio 
+    textarea 
+    button 
+    dropdowns
+    
+
+
+Form tag :
+    Helps in sending user input data to the server automatically.
+
+    2 predefined attributes need to be provided with corresponding values
+
+        action 
+            specify the url of the server, to which data has to be passed/send
+
+        method 
+            GET 
+                Non secured communication
+                data will be sent to server, through url, url rewritting , data will be passes a query params 
+            POST 
+            QUERY
+            DELETE
+            .. 
+
+
+
+
+Server url:
+    http://www.amazon.com 
+
+    https://flipkar.com 
+
+    http://localhost:8081
+
+    http://sample.com/data/info 
+
+
+http://www.samplepage.com/data/info?uname=Krish&uactPwd=hello12323&userCountry=jap&gender=on&lng_eng=on&lng_tel=on&aboutUser=am+good

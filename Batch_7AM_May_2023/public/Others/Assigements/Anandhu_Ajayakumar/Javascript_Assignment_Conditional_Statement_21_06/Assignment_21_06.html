@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <script>
+            var empName = prompt("Enter the empName:");
+            var age = prompt("Enter the age:");
+            var gender = prompt("Enter the gender:");
+            var Male = "Male || male";
+            var Female = "Female || female";
+            var baseLocation = prompt("Enter the location:");
+            var dept = prompt("Enter the department:");
+            var basicSal = prompt("Enter the Basic Salary:");
+            parseInt(basicSal);
+            var pF = (basicSal*12)/100;
+            var hra = (basicSal*24)/100;
+            var totalSal = pF+ hra + basicSal;
+            var tax1 = totalSal * 0.15;
+            var tax2 = totalSal * 0.1;
+            var tax3 = totalSal * 0.05;
+            var tax4 = totalSal * 0;
+
+            console.log("Employee Name: " +empName);
+            console.log("Age: " +age);
+            console.log("Gender: " +gender);
+            console.log("Location: " +baseLocation);
+            console.log("Department: " +dept);
+            console.log("The total sal is " +totalSal);
+
+            if(gender = Male){
+                if(totalSal >= 500000){
+                    console.log("Tax to be paid:" +tax1);
+                }else if(totalSal >= 300000){
+                    console.log("Tax to be paid:" +tax2);
+                }else if(totalSal >= 100000){
+                    console.log("Tax to be paid:" +tax3);
+                }else{
+                    console.log("Tax to be paid:" +tax4);
+                }
+            }else if(gender = Female){
+                if(totalSal >= 500000){
+                    console.log("Tax to be paid:" +tax2);
+                }else if(totalSal >= 300000){
+                    var tax = totalSal * 0.05;
+                    console.log("Tax to be paid:" +tax3);
+                }else{
+                    console.log("Tax to be paid:" +tax4);
+                }
+            }
+        </script>    
+    </body>
+</html>

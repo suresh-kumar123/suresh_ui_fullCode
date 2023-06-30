@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Even Number check Array
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            for(var i = 0; i < 5; i++){
+                data[i] = prompt("Enter values for the position: " + i);
+                data[i] = parseInt(data[i]);
+                console.log(data);
+            }
+            
+            for(var i = 0; i < data.lenght; i++){
+                if(data[i] % 2 == 0){
+                    console.log(data[i]);
+                }
+            }
+        </script>
+    </body>
+</html>

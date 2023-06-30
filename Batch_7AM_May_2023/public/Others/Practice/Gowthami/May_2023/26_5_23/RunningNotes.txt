@@ -1,0 +1,10 @@
+inline and block level elements
+
+block level elements
+	1.start with new line and following element also start with new line
+	2.it occupies total container widh ie 100% width and we can also controls the width and height dimensions
+	ex: div tag is best example and it is pureley block level element
+
+inline elements
+	it occupies only content width
+	we cannot control width and height dimensions

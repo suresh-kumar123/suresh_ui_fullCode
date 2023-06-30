@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lucky nos btwn 1000 to 100</title>
+  </head>
+  <body>
+    <script>
+      var rem;
+      var z;
+      var luckynumbr = 0;
+      for (var z = 1000; z >= 100; z--) {
+        luckynumbr = 0;
+        n = z;
+        while (n > 0) {
+          rem = n % 10;
+          n = n / 10;
+          n = parseInt(n);
+          luckynumbr = luckynumbr + rem;
+
+          if (n == 0 && luckynumbr > 9) {
+            n = luckynumbr;
+            luckynumbr = 0;
+          }
+        }
+        console.log(z + "  is: " + luckynumbr);
+      }
+    </script>
+  </body>
+</html>

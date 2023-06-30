@@ -1,0 +1,25 @@
+Documenting / code comment 
+    <!-- 
+
+
+        .. . . . . .
+         . . 
+         
+    -->
+
+    Path of any resource 
+        Relative Path
+
+        Absolute 
+
+
+    -------------
+
+    Anchor tag 
+        <a href="path of external page">
+
+
+            sdj;lkasdfj;any;laskdjf
+             image 
+             container
+        </a>

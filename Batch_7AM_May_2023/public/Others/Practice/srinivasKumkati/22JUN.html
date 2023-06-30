@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <title>zIndex</title>
+    <style>
+        .maincontainer{
+            /* position: relative; */
+            /* top: 200px;
+            left: 500px; */
+            border: 5px solid black;
+            /* height: 515px; */
+            width: 600px;
+            margin: auto;
+        }
+        .container{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px auto;
+            text-align: center;
+            /* position: absolute; */
+            /* text-decoration-thickness: bold; */
+        }
+        .container1{
+            background-color: cyan;
+            color: maroon;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+        .container2{
+            background-color: yellow;
+            color: red;
+            position: relative;
+            /* z-index: 4; */
+            /* top: 169px; */
+            /* left: 200px; */
+        }
+        .container3{
+            background-color: grey;
+            color: brown;
+            bottom: 0px;
+            left: 200px;
+        }
+        .container4{
+            background-color: yellow;
+            color: red;
+            /* position: sticky; */
+            bottom: 169px;
+            right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="container container1">
+            This is container 1
+        </div>
+        <div class="container container2">
+            This is container 2
+        </div>
+        <div class="container container3">
+            This is container 3
+        </div>
+        <div class="container container4">
+            This is container 3
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Number Summation Array</title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            var result = 0;
+            for(var i = 0; i < 5; i++){
+                data[i] = prompt("Enter values for the psoition: " +i);
+                data[i] = parseInt(data[i]);
+            }console.log(data);
+            
+            for(var i = 0; i < data.length; i++){
+                var counter = 0;
+                if(data[i] == 1 || data[i] == 0){
+                    continue;
+                }
+                for(var n = 2; n < data[i]; n++){
+                    if(data[i] % n == 0){
+                        counter++;
+                    }
+                    if(counter != 0){
+                        break;
+                    }
+                }
+                if(counter == 0){
+                    result = result + data[i];
+                }                       
+            }console.log(result); 
+        </script>
+    </body>
+</html>

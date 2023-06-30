@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Student Details usiing arrays using prompt method for Student name, gender and Age</h2>
+        <script>
+            var sName = prompt ("Enter student name");
+            var sAge = prompt("Enter student age");
+            var sGender = prompt("Enter gender of student");
+
+            // var m1 = 45;
+            // var m2 = 55;
+            // var m3 = 75;
+            // var m4 = 88;
+            //var studentmarks = [23, 45, 67, 89];
+            var studentMarks = [];
+            var totalMarks = 0;
+           // var leng = studentmarks.length;
+            for (var i = 0; i < 4; i++){
+                studentMarks[i]=prompt("Enter student marks");
+                studentMarks[i] = parseInt(studentMarks[i]);
+                //console.log(studentMarks[i]);
+                totalMarks = totalMarks + studentMarks[i];
+            }
+            //var totalMarks = m1+m2+m3+m4;
+            var avgMarks = totalMarks/4;
+
+            console.log("Student name is "+sName);
+            console.log("Student age is "+sAge);
+            console.log("Student gender is "+sGender);
+            console.log("Student total marks is "+totalMarks);
+            console.log("Student average Marks is "+avgMarks);
+
+        </script>
+    </body>
+</html>

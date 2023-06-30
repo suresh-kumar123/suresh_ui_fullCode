@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Spriting</title>
+    <style>
+      .title {
+        border: 2px solid;
+        background-color: lightcoral;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px;
+        font-size: x-large;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .about {
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 10px;
+        background-color: lightgreen;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      ol {
+        padding: 0px;
+        font-size: 18px;
+      }
+      li div {
+        padding: 5px;
+      }
+      .image {
+        border: 2px solid black;
+        height: 150px;
+        width: 150px;
+        background-image: url(Images/all_Images/student1.jpeg);
+        background-repeat: no-repeat;
+      }
+      .img1 {
+        background-position: -60px 0px;
+      }
+      .img2 {
+        background-position: -60px 0px;
+      }
+      .img3 {
+        background-position: -60px 0px;
+        background-image: url(Images/all_Images/student2.jpeg);
+      }
+      .img4 {
+        background-position: -60px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">Image Spriting</h2>
+    <ol>
+      <li class="about">
+        <div><b>Name</b>: Shaik Yusuf</div>
+        <div><b>Age</b>: 23</div>
+        <div><b>Gender</b>: Male</div>
+        <div><b>Department</b>: UI</div>
+        <div class="image img1"></div>
+      </li>
+      <li class="about">
+        <div><b>Name</b>: Shaik Nazeer</div>
+        <div><b>Age</b>: 20</div>
+        <div><b>Gender</b>: Male</div>
+        <div><b>Department</b>: Devops</div>
+        <div class="image img2"></div>
+      </li>
+      <li class="about">
+        <div><b>Name</b>: Supriya</div>
+        <div><b>Age</b>: 24</div>
+        <div><b>Gender</b>: Female</div>
+        <div><b>Department</b>: Selinium</div>
+        <div class="image img3"></div>
+      </li>
+      <li class="about">
+        <div><b>Name</b>: Shaik Bashid</div>
+        <div><b>Age</b>: 23</div>
+        <div><b>Gender</b>: Male</div>
+        <div><b>Department</b>: Aws</div>
+        <div class="image img4"></div>
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employe Details<</title>
+    </head>
+    <body>
+        <h3>Assignment on Control Stuctures using if else and nested if else condition concept</h3>
+            <script>
+                var empName=prompt("enter emp name");
+                var empDept=prompt("Enter Dept name");
+                var empAge=prompt("Enter emp age");
+                var empLoc=prompt("Enter emp location");
+                var empGender=prompt("Enter emp gender");
+                var empBasicSalary=prompt("Enter emp basic salary");
+                empBasicSalary=parseInt(empBasicSalary);
+                console.log("Employee basic salary per month is "+empBasicSalary);
+                var empBasicPerAnnum=empBasicSalary*12;
+                console.log("Employee basic salary per annum is "+empBasicPerAnnum);
+                var pfPerMonth=(empBasicSalary*12)/100;
+                console.log("Employee pf per month is "+pfPerMonth);
+                var pfPerAnnum=pfPerMonth*12;
+                console.log("Employee pf per annum is "+pfPerAnnum);
+                var hraPerMonth=(empBasicSalary*24)/100;
+                console.log("Employee HRA per month is "+hraPerMonth);
+                var hraPerAnnum=hraPerMonth*12;
+                console.log("Employee HRA per annum is "+hraPerAnnum);
+                var totalAnualSalary= empBasicPerAnnum+pfPerAnnum+hraPerAnnum;
+                console.log("Employee total income per annum is "+totalAnualSalary);
+                console.log("Employee Name is "+empName);
+                console.log("Employee Department is "+empDept);
+                console.log("Employee Age is "+empAge);
+                console.log("Employee location is "+empLoc);
+                console.log("Employee gender is "+empGender);
+                var tax15Percent = ((totalAnualSalary)-(15*totalAnualSalary/100));
+                //console.log("Tax calculation for 15% is "+tax15Percent);
+                var tax10Percent = ((totalAnualSalary)-(10*totalAnualSalary/100));
+                //console.log("Tax calculation for 10% is "+tax10Percent);
+                var tax5Percent = ((totalAnualSalary)-(5*totalAnualSalary/100));
+                //console.log("Tax calculation for 5% is "+tax5Percent);
+                
+                if(empGender=='Male' || empGender=='male' || empGender=='M' || empGender=='m') {
+                        if(totalAnualSalary>=500000){
+                        console.log(empGender+ " total Annual salary after 15% of tax paid is "+tax15Percent);
+                    }else if(totalAnualSalary>=300000){
+                        console.log(empGender+ " total Annual salary after 10% of tax paid is "+tax10Percent);
+                    }else if(totalAnualSalary>=100000){
+                        console.log(empGender+ " total Annual salary after 5% of tax paid is "+tax5Percent);
+                    }else{
+                        console.log(empGender+ " total Annual salary after 0% of tax paid is "+totalAnualSalary);
+                    }
+                }
+                else {
+                    if(totalAnualSalary>=500000){
+                        console.log(empGender+ " total Annual salary after 10% of tax paid is "+tax10Percent);
+                    }else if(totalAnualSalary>=300000){
+                        console.log(empGender+ " total Annual salary after 5% of tax paid is "+tax5Percent);
+                    }else{
+                        console.log(empGender+ " total Annual salary after 0% of tax paid is  "+totalAnualSalary);
+                    }
+                }
+
+            </script>
+        
+    </body>
+</html>

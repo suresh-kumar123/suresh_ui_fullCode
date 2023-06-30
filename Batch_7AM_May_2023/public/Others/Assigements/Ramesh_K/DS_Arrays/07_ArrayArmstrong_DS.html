@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armstrong_Number</title>
+  </head>
+  <body>
+    <script>
+      var res,
+        sum = 0;
+      var data = [];
+      for (i = 0; i < 3; i++) {
+        data[i] = prompt("Enter the value for position " + i);
+        data[i] = parseInt(data[i]);
+        console.log(data[i]);
+      }
+      for (i = 0; i <= data.length - 1; i++) {
+        var z = data[i].toString().length;
+        var sum = 0;
+        n = data[i];
+        var ov = n;
+        while (n > 0) {
+          res = n % 10;
+          n = n / 10;
+          n = parseInt(n);
+          sum += res ** z;
+        }
+        if (sum == ov) {
+          console.log("The given number is armstrong:  " + sum);
+        } else {
+          console.log("The given number is not armstrong:  " + sum);
+        }
+      }
+    </script>
+  </body>
+</html>

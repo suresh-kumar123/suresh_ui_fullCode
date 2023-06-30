@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employees Tax Cal</title>
+
+        <script>
+            var ename = prompt("Enter your name");
+            var eage = prompt("Enter your age");
+            var egender = prompt("Enter Gender");
+            var elocation = prompt("Enter your Location");
+            var edepartment = prompt("Enter Department");
+            
+            var basesalary = prompt("Enter the Basic Salary");
+            basesalary = parseInt(basesalary);
+
+            var hra = (basesalary * 24) / 100;
+            var pf = (basesalary * 12) / 100;
+            var totalsalary = basesalary + hra + pf;
+
+            console.log("Enter Employee Name" + ename);
+            console.log("Enter Age" + eage);
+            console.log("Enter Gender" + egender);
+            console.log("Enter Location" + elocation);
+            console.log("Enter Department" + edepartment);
+            console.log("Enter Total Salary" + totalsalary);
+
+            if (egender == "male"){
+                if(totalsalary >=500000){
+                    tax=(totalsalary*15) / 100
+                    console.log("Tax is " + tax)
+                }
+
+                else if(totalsalary >= 300000){
+                    tax=(totalsalary*10) / 100
+                    console.log("Tax is " + tax)
+                }
+                
+                else if(totalsalary >=100000){
+                    tax=(totalsalary*5) / 100
+                    console.log("Tax is " + tax)
+                }
+                else { 
+                    console.log("NO TAX!!")
+                }
+            }
+
+            else {
+                if (totalsalary >= 500000){
+                    tax=(totalsalary*10) / 100
+                    console.log("Tax is " + tax)
+                }
+                else if(totalsalary >= 300000){
+                    tax=(totalsalary*5) / 100
+                    console.log("Tax is " + tax)
+                }
+                else{
+                    console.log("NO TAX!!")
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

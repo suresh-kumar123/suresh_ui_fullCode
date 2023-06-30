@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Check for prime number
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("enter a nuber");
+            n = parseInt(n);
+            var result;
+            var count = 0;
+            for (var i  = 1; i <= n; i++) {
+                result = n % i;
+                if (result == 0) {
+                    count++;
+                }                
+            }
+
+            if (count == 2) { // 2 indicates twice number got divisible
+                console.log("its prime no.")
+            } else {
+                console.log("Its not a prime");
+            }
+
+            console.log(count);
+        </script>
+    </body>
+</html>

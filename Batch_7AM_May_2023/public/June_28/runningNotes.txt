@@ -1,0 +1,38 @@
+splice()  method
+
+Syntax:
+    array.splice(starting index, total no. of values to be deleted, optional values to be inserted)
+
+    data.push(10)
+
+    data.splice(data.length, 0, 10);
+
+    data.splice(0, 0, 11)
+
+0--------------------
+
+ASCII 
+
+-------------
+
+JIRA Tool 
+    Ticketing tool 
+
+    Task 
+    story 
+    epic 
+    ..
+    --------
+
+        ticket - "Create a page with product details" - MNP_208 -> Prasad 
+
+            ticket id 
+            ticket title
+            task description 
+            who created 
+            to whom its assigned 
+            story points - 2
+            Acceptence criteria - a page sould be available with product details
+            sprint
+            Comments for 
+            current status - inprogress, just created, done ,f failt

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sample Registration form</title>
+        <style>
+            .container{
+                width: 500px;
+                height: 600px;
+                margin: auto;
+                background-color: #f5d0d0;
+                border: 1px solid;
+                position: relative;
+                top: 100px;
+                
+            }
+            h3{
+                text-align: center;
+            }
+            .registerform{
+                width: 450px;
+                height: 520px;
+                border: 1px solid;
+                background-color: #d7e6fa;
+                margin: auto;
+            }
+            ul{
+                list-style: none;
+            }
+            li{
+                margin: 10px;
+                padding: 10px;
+            }
+            .username{
+                position: relative;
+                left: 80px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .firstname{
+                position: relative;
+                left: 80px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .lastname{
+                position: relative;
+                left: 82px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .pswd{
+                position: relative;
+                left: 90px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .cnfmpswd{
+                position: relative;
+                left: 30px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .email{
+                position: relative;
+                left: 110px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            .maleinput{
+                position: relative;
+               left: 95px;
+            }
+            .male{
+                position: relative;
+                left: 100px;
+            }
+            .femaleinput{
+                position: relative;
+               left: 100px;
+            }
+            .female{
+                position: relative;
+                left: 100px;
+            }
+            
+            .register{
+              float: right;
+              background-color: blue;
+              color: white;
+              position: relative;
+              bottom: 50px;
+              right: 60px;
+              width: 80px;
+              height: 30px;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>
+                STUDENT REGISTRATION FORM
+            </h3>
+
+            <div class="registerform">
+                <form method="GET" action="">
+                    <ul>
+                        <li>
+                            <label>User name</label>
+                            <input class="username" type="text" name="uname" required >
+                        </li>
+                        <li>
+                            <label>First name</label>
+                            <input class="firstname" type="text" name="firstname" required>
+                        </li>
+                        <li>
+                            <label>Last name</label>
+                            <input class="lastname" type="text" name="Lastname" required>
+                        </li>
+                        <li>
+                            <label>password</label>
+                            <input class="pswd" type="password" name="userpswd">
+                        </li>
+                        <li>
+                            <label> Confirm password</label>
+                            <input class="cnfmpswd" type="password" name="cnfrmuserpswd">
+                        </li>
+                        <li>
+                            <label>Email</label>
+                            <input class="email" type="email" name="useremail" required>
+                        </li>
+                        <li>
+                            <label>Gender</label>
+                            <input class="maleinput" type="radio" name="gender">
+                            <span class="male">Male</span>
+                            <input class="femaleinput" type="radio" name="gender">
+                            <span class="female">Female</span>
+                        </li>
+                        <li>
+                            
+                            <input class="checkbox" type="checkbox" name="condition" required>
+                            <label class="condition">I accept terms and conditions</label>
+                        </li>
+                        <li>
+                            <input class="register" type="submit" value="Register">
+                        </li>
+                    </ul>
+
+                </form>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>

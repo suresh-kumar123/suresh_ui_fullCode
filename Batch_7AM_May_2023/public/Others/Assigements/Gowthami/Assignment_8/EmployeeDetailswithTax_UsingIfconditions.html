@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if conditions</title>
+</head>
+<body>
+    <script>
+        var empname = prompt("enter emloyee name");
+        var age = prompt("enter your age");
+        var gender = prompt("enter your gender");
+        gender = gender.toLowerCase();
+        var male = 'male';
+       
+        var place = prompt("enter your place");
+        
+        var department = prompt("enter your department");
+        
+        var basicsal = prompt("enter your salary");
+        basicsal = parseInt(basicsal);
+
+        var pf = (basicsal*12)/100;
+        var hra = (basicsal*24)/100;
+
+        var totalsalary = basicsal + pf + hra;
+
+        var tax1 = (totalsalary*15)/100;
+        var tax2 = (totalsalary*10)/100;
+        var tax3 = (totalsalary*5)/100;
+
+
+        console.log("employee name = " + empname);
+        console.log("employee age = " + age);
+        console.log("employee gender = " + gender);
+        console.log("employee department = " + department);
+        console.log("basic salary = " + basicsal);
+        console.log("pf is = " + pf);
+        console.log("hra is = " + hra);
+        console.log("total salary is = " + totalsalary);
+
+       
+        if(gender == 'male'){
+            if(totalsalary >= 500000){
+                console.log("tax is 15 percent = " + tax1);
+            }else if(totalsalary >= 300000){
+                console.log("tax is 10 percent = " + tax2);
+            }else if(totalsalary >= 100000){
+                console.log("tax is 5 percent = " + tax3);
+            }else{
+                console.log("no tax");
+            }
+
+        }
+        else {
+            if(totalsalary >= 500000){
+                console.log("tax is 10 percent = " + tax2);
+            }
+            else if(totalsalary >= 300000){
+                console.log("tax is 5 percent = " + tax3);
+            }
+            else{
+                console.log("no tax");
+            }
+
+        }
+
+
+
+</script>
+    
+</body>
+</html>

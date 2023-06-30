@@ -1,0 +1,15 @@
+Datastructures - 
+    Arrays 
+        var a; 
+        a = []; // static 
+          (or)
+        a = new Array(); //dynamic
+
+    var a = [];
+
+    a = [20, 30, 40, 44];
+
+
+    var a = [20, 3, 45, 6, 89];
+
+    var studentData = ["raj", true, 23, 'male']

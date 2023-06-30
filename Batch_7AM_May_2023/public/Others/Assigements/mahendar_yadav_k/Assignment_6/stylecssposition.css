@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 {
+    font-size: 30px;
+    border: 2px solid;
+    text-align: center;
+    color: aqua;
+    height: 50px;
+    padding: 20px;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 70px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8gMcFikjSUd_HizkNrc2u-u6RDkpG5WCsPILK5UAzZQ&usqp=CAU&ec=48665701);
+  }
+  .containor {
+    padding-left: 70px;
+    padding-right: 140px;
+  }
+  
+  .textdetails {
+    height: 700px;
+    background-color: antiquewhite;
+    width: 97%;
+  }
+  .block1 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    text-align: center;
+  
+    margin-top: 20px;
+    position: absolute;
+  }
+  .block1:hover {
+    background-color: aqua;
+  }
+  .block2 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(159, 159, 237);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+  }
+  .block2:hover {
+    background-color: rgb(228, 119, 10);
+  }
+  .block3 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(250, 168, 168);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+    left: 80%;
+  }
+  .block3:hover {
+    background-color: rgb(10, 110, 58);
+  }
+  .block4 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(120, 4, 4);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+    left: 76%;
+    top: 180px;
+  }
+  .block4:hover {
+    background-color: rgb(148, 108, 235);
+  }
+  .block5 {
+    border: 1px solid;
+    height: 100px;
+    width: 120px;
+    background-color: rgb(231, 133, 213);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 360px;
+    position: absolute;
+    left: 40%;
+  }
+  .block5:hover {
+    background-color: rgb(30, 5, 122);
+  }
+  .block6 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(238, 27, 132);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 310px;
+    position: absolute;
+    left: 48%;
+  }
+  .block6:hover {
+    background-color: rgb(162, 26, 236);
+  }
+  .block7 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(94, 187, 230);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 310px;
+    position: absolute;
+    left: 35%;
+  }
+  .block7:hover {
+    background-color: rgb(242, 0, 255);
+  }
+  .block8 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(4, 72, 114);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 426px;
+    position: absolute;
+    left: 35%;
+  }
+  .block8:hover {
+    background-color: rgb(109, 2, 86);
+  }
+  .block9 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(34, 222, 210);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 426px;
+    position: absolute;
+    left: 48%;
+  }
+  .block9:hover {
+    background-color: rgb(230, 124, 124);
+  }
+  .block10 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(16, 169, 85);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 630px;
+    position: absolute;
+    left: 40px;
+  }
+  .block10:hover {
+    background-color: rgb(241, 15, 34);
+  }
+  .block11 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(148, 226, 75);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    top: 670px;
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+  }
+  .block11:hover {
+    background-color: rgb(26, 235, 81);
+  }
+  .block12 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(127, 135, 6);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-top: 20px;
+    position: absolute;
+    left: 80%;
+    top: 630px;
+  }
+  .block12:hover {
+    background-color: rgb(2, 98, 39);
+  }
+  .block13 {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(231, 94, 94);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 76%;
+    top: 670px;
+    bottom: 10px;
+  }
+  .block13:hover {
+    background-color: rgb(195, 245, 151);
+  }  

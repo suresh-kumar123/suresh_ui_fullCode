@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong Number Checker</title>
+    </head>
+    <body>
+        <script>
+            var x = prompt("Enter the number:");
+            x = parseInt(x);
+            var y = x;
+            var cube1 = 0;
+            var rem = 0;
+            while(x > 0){
+                rem = x % 10;
+                cube1 = cube1 + (rem*rem*rem);
+                x = x / 10;
+                x = parseInt(x);
+            }
+            if(cube1 == y){
+                console.log("The entered number " +y+ " is a Armstrong Number");
+            }else{
+                console.log("The entered number " +y+ " is not a Armstrong Number");
+            }          
+        </script>
+    </body>
+</html>

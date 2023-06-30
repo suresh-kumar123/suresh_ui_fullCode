@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum OF Individial Digits of given number</title>
+
+        <script> 
+
+        var rem;
+        var sum = 0;
+
+        var num = prompt( "Enter any number to find the addition of its individual digits");
+        num = parseInt(num);
+
+        for (i = 1; i <= num; i++){
+            rem = num % 10;
+            sum = rem + sum;
+            num = num / 10;
+            num = parseInt(num);
+        }
+
+        console.log("The sum of individual digits of " + num + " is " + sum);
+        
+        </script>
+
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

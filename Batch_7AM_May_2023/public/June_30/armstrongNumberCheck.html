@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Armstrong number check
+        </title>
+    </head>
+    <body>
+        <script>
+            function checkArmstrongNumer() {
+                var n = prompt("Enter a value");
+                var rem, result = 0;
+                var totalDigits = n.length;
+                n = parseInt(n);
+                var temp = n;
+                while (n > 0 ) {
+                    rem = n % 10; 
+                    n = n / 10;
+                    n = parseInt(n);
+                    result = result + (rem ** totalDigits);
+                }
+
+                if (result == temp) {
+                    console.log("its armstrong no")
+                } else {
+                    console.log("not an armstrong");
+                }
+                console.log(result);
+            }
+            checkArmstrongNumer();
+
+            
+        </script>
+    </body>
+</html>

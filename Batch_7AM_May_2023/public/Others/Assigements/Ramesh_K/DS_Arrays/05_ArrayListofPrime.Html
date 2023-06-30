@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var result = 0;
+      var data = [];
+      var count = 0;
+      for (j = 0; j < 5; j++) {
+        count = 0;
+        data[j] = prompt("Enter the value for position " + j);
+        data[j] = parseInt(data[j]);
+
+        for (var i = 1; i <= data[j]; i++) {
+          result = data[j] % i;
+          if (result == 0) {
+            count++;
+          }
+        }
+
+        if (count == 2) {
+          alert("This is prime number, :)");
+        } else {
+          alert("This is not a prime number, :(");
+        }
+
+        // // Sum of all array elements which are Prime
+        // if (data[i] % 2 != 0) {
+        //   console.log(data[i] + " Is a Prime Number ");
+        //   result = result + data[i];
+        // }
+      }
+
+      //   console.log(" The Sum of all array elements is : " + result);
+    </script>
+  </body>
+</html>

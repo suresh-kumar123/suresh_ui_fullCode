@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating CSS Positions - Fixed</title>
+    <style>
+        .block {
+            border: 1px solid;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+        }
+        .block1 {
+            background-color: green;
+        }
+        .block2 {
+            background-color: blue;
+        }
+        .block3 {
+            background-color: plum;
+            position: fixed;
+            left: 200px;
+        }
+        .block4 {
+            background-color: yellowgreen;
+        }
+        .container {
+            border: 1px solid;
+            height: 500px;
+            padding: 20px;
+            margin: 20px;
+            width: 400px;
+            overflow: auto;
+        }   
+        .header {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 5px;
+            right: 5px;
+            top: 1px;
+        }     
+    </style>
+</head>
+<body>
+    <div class="header">
+        This is our Header
+    </div>
+    <div class="container">
+        <div class="block block1">Block1</div>
+        <div class="block block2">Block2</div>
+        <div class="block block3">Block3</div>
+        <div class="block block4">Block4</div>
+        <div class="block block1">Block1</div>
+        <div class="block block2">Block2</div>
+        <div class="block block3">Block3</div>
+        <div class="block block4">Block4</div>
+    </div>
+    <div class="container"></div>
+</body>
+</html>

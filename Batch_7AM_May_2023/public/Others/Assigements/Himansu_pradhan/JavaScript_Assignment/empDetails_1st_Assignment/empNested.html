@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename = prompt("Enter Emp Name");
+        var eage = prompt("Enter Emp Age");
+        var edept = prompt("Enter Emp Dept");
+        var eGender = prompt("Enter Emp Gender");
+        var male = 'male';
+        var female = 'female';
+        var elocation = prompt("Enter Emp location");
+        var basicsal = prompt("Enter Basic Salary");
+        basicsal =parseInt(basicsal);
+        var pf = (basicsal * 12) / 100;
+        var hra = (basicsal * 24) / 100;
+        var totalSal = pf + hra + basicsal;
+        var tax1 = (totalSal*15)/100;
+        var tax2 = (totalSal*10)/100;
+        var tax3 = (totalSal*5)/100;
+        console.log("the ename is" + ename);
+        console.log("the eage is" + eage);
+        console.log("the edept is" + edept);
+        console.log("the elocation is" + elocation)
+        console.log("the eGender is" + eGender);
+        console.log("the basicsal is" + basicsal);
+        console.log("the pf is" + pf);
+        console.log("the hra is" + hra);
+        console.log("the totalSal is" + totalSal);
+        if(eGender = male){
+            if(totalSal >= 500000){
+                console.log("tax is 15% = " + tax1);
+            }else if(totalSal >= 300000){
+                console.log("tax is 10% = " + tax2);
+            }else if(totalSal >= 100000){
+                console.log("tax is 5% = " + tax3);
+            }else{
+                console.log("tax is zero");
+            }
+        }else if(eGender = female){
+            if(totalSal >= 500000){
+                console.log("tax is 10% = " + tax2);
+            }else if(totalSal >= 300000){
+                console.log("tax is 10% = " + tax3);
+            }else{
+                console.log("tax is zero");
+            }
+        }
+    </script>
+</body>
+</html>

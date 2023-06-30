@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_Elements</title>
+    <style>
+   /* *{
+    margin: 0px;
+    padding: 0px;
+   } */
+  .Heading{
+    text-decoration: underline;
+    color: blueviolet;
+    text-align: center;
+  }
+  .Main_Paragraph::first-line{
+color: rgb(115, 225, 161);
+  }
+  .Main_Paragraph::after{
+    content: "Read me";
+    color: aquamarine;
+  }
+
+  p::after{
+    content: "Continue reading from our main page";
+    background-color: brown;
+    text-decoration: underline;
+    color: aliceblue;
+  }
+  p::selection{
+    background-color: blueviolet;
+    font-size: 10px;
+    color: aqua;
+  }
+  .first_image{
+    height: 500px;
+    width: 1000px;
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/202305/fotojet_1-sixteen_nine.jpg?VersionId=Gqx.KyVQwsnzZ6jPiaRxvD7FHg8s6uEn&size=690:388");
+    background-size: 100% 100%;
+    background-position: center;
+    margin: auto;  
+  }
+div{
+    text-align: center;
+    /* border-image: round; */
+    border-radius: 10px;
+}
+    </style>
+
+
+</head>
+<body>
+    <H1 class="Heading">
+        <span id="Heading_letter_color1" style="color: brown;">I</span>
+        <span id="Heading_letter_color2" style="color: aquamarine;">N</span>
+        <span id="Heading_letter_color3" style="color: blue;">D</span>
+        <span id="Heading_letter_color4" style="color: rgb(15, 223, 29);">I</span>
+        <span id="Heading_letter_color5" style="color: yellow;">A</span>
+        <span id="Heading_letter_color6" ></span>
+        <span id="Heading_letter_color7" >T</span>
+        <span id="Heading_letter_color8">O</span>
+        <span id="Heading_letter_color9">D</span>
+        <span id="Heading_letter_color10">A</span>
+        <span id="Heading_letter_color11">Y</span>
+    </H1>
+    <div class="first_image">Content_Image</div>
+    <h2 class="Sub_Heading">Politics to business, cinema to art: South Conclave 2023 to have it all | Begins soon</h2>
+    <p class="Imp_Paragraph">The two-day India Today Conclave South 2023 kicks off today, where political leaders and renowned artists will express their views on a wide range of topics pertinent to southern India.</p>
+    <p class="Main_Paragraph"> By India Today News Desk: The India Today Conclave South 2023 starts on Thursday, June 1, where top political leaders and renowned artists will express their views on issues pertinent to southern India. The line-up for the two-day event includes Kerala Chief Minister Pinarayi Vijayan, Rajya Sabha members P Chidambaram and KC Venugopal, Tamil Nadu BJP president K Annamalai, MP and AIMIM chief Asaduddin Owaisi, actors Kamal Haasan, Rana Daggubati, Sobhita Dhulipala, Aishwarya Lekshmi and other famed personalities including champion sailor Abhilash Tomy, singer Vijay Yesudas and Isro Chairman S Somnath.</p>
+</body>
+</html>

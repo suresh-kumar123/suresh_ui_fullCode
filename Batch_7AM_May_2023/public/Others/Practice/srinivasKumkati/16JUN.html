@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <title>JS draft1</title>
+    <script>
+        var empName = prompt("What is employee name?");
+        var empGender = prompt("What is employee gender?");
+        var empDepartment = prompt("What is employee depatment?");
+        var empBasicSalary = prompt("What is employee basic salary?");
+        // var empName = "Ravi";
+        // var empGender = "Male";
+        // var empDepartment = "Consultations";
+        // var empBasicSalary = 5000;
+        empBasicSalary = parseInt(empBasicSalary);
+        var PF = (empBasicSalary*12)/100;
+        var HRA = (empBasicSalary*24)/100;
+        var totalSalary = empBasicSalary+PF+HRA;
+
+        console.log("Employee Name is "+empName+", of gender "+empGender+" working in "+empDepartment+" with basic salary "+empBasicSalary);
+        console.log("After findind his PF "+PF+" and HRA "+HRA+" total salary is "+totalSalary);
+        // console.log("Employee Gender is "+empGender);
+        // console.log("Employee Department is "+empDepartment);
+        // console.log("Employee basic salary is "+empBasicSalary);
+        // console.log("The PF of employee is "+PF);
+        // console.log("The HRA of employee is "+HRA);
+        // console.log("The total salary is "+totalSalary);
+    </script>
+</head>
+<body>
+    <h3>Do check the console</h3>
+</body>
+</html>

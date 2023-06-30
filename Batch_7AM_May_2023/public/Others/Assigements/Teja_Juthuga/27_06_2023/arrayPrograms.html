@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Assignments</title>
+    </head>
+    <body>
+        <script>
+            /* 
+                var data = [1, 2, 3, 4, "Ram", true, 99.99, function greet(){return "hello"}, ["Raju, Rani"]];
+                // console.log(typeof(data))
+                for (var i = 0; i < data.length; i++){
+                    console.log("Data Type of " + data[i] + " is " + typeof(data[i]));
+                }
+            */
+            
+            /*
+                // All the even numbers in an Array
+
+                var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 15, 12, 14, 19];
+                // console.log((arr.length));
+                for (var i = 0; i <= arr.length; i++){
+                    if (arr[i] % 2 == 0){
+                        console.log(arr[i])
+                    }
+                }
+            */
+            
+                
+            // All odd numbers in an array
+
+            var arr = [2, 3, 4, 5, 6, 7, 8, 9, 11, 13, 15, 17, 19, 22, 24, 26, 28, 30, 32, 33, 101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 153, 370, 371, 407, 1634, 8208, 43, 53, 61, 73, 83, 97, 103, 109, 113, 127, 131, 139, 149, 1125];
+
+            count_of_odds = 0
+            for (var i = 0; i < arr.length; i++){
+                if (arr[i] % 2 != 0){
+                    count_of_odds += 1;
+                    console.log(arr[i]);
+                }
+            }
+            console.log("Total no. of Odds = " + count_of_odds);
+            
+
+        </script>        
+    </body>
+</html>
